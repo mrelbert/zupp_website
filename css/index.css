@@ -1,0 +1,43 @@
+.background {
+  background-color: #1A1A1A;
+}
+
+.greeting {
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  text-align: center;
+  position: relative;
+  padding-top: 200px;
+}
+
+.col {
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.col-4{
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+#sign-in{
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  text-align: right;
+}
+
+.bubble {
+  border-radius: 25px;
+  border: 1px solid #FEC12E;
+  height: 90px;
+  width: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
