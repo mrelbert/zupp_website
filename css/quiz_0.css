@@ -35,6 +35,12 @@
   text-align: right;
 }
 
+#go_back{
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  text-align: left;
+}
+
 .bubble {
   border-radius: 25px;
   border: 1px solid #FEC12E;

@@ -23,6 +23,14 @@ market.onclick = function(){
 
 var about = document.getElementById('about');
 
-about.style.cursor = function(){
+about.style.cursor = 'pointer';
+about.onclick = function(){
   window.location.href = "about.html"
+}
+
+var go_back = document.getElementById('go_back');
+
+go_back.style.cursor = 'pointer';
+go_back.onclick = function(){
+  window.location.href = "index.html";
 }
