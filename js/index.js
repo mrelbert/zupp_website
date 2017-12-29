@@ -6,10 +6,23 @@ quiz.onclick = function(){
   //window.location.replace("quiz_0.html");
 }
 
-var hoz = document.getElementById('quiz');
+var hoz = document.getElementById('hoz');
 
-quiz.style.cursor = 'pointer';
-quiz.onclick = function(){
-  window.location.href = "https://suppzupp.myshopify.com";
+hoz.style.cursor = 'pointer';
+hoz.onclick = function(){
+  window.location.href = "https://suppzupp.myshopify.com/blogs/humans-of-zupp";
   //window.location.replace("quiz_0.html");
+}
+
+var market = document.getElementById('market');
+
+market.style.cursor = 'pointer';
+market.onclick = function(){
+  window.location.href = "https://suppzupp.myshopify.com/search"
+}
+
+var about = document.getElementById('about');
+
+about.style.cursor = function(){
+  window.location.href = "about.html"
 }
