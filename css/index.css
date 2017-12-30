@@ -10,6 +10,18 @@
   padding-top: 200px;
 }
 
+.justify-content-center {
+  margin-right: 15px;
+}
+
+.col-2 {
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  text-align: center;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
 .col {
   font-family: 'Oswald', sans-serif;
   color: #FEC12E;
@@ -30,6 +42,12 @@
   font-family: 'Oswald', sans-serif;
   color: #FEC12E;
   text-align: right;
+}
+
+#go_back{
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  text-align: left;
 }
 
 .bubble {
