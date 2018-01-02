@@ -1,3 +1,7 @@
+.container{
+  position: relative;
+}
+
 .background {
   background-color: #1A1A1A;
 }
@@ -10,8 +14,79 @@
   padding-top: 200px;
 }
 
+.padLeft{
+  padding-left: 100px;
+}
+
+.padMoreLeft{
+  position: absolute;
+  padding-left: 500px;
+}
+
+.padTop{
+  padding-top: 100px;
+}
+
+.padRight{
+  padding-right: 100px;
+}
+
+.coverSecondPic{
+  position: absolute;
+  top: 5;
+  left: 0;
+  z-index: 3;
+  padding-left: 510px;
+}
+
+.aboutGreeting{
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+
+.secondGreeting{
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+}
+
+#firstLayer{
+  font-size: 35px;
+}
+
+#firstLayerDescription{
+  font-size: 18px;
+}
+
+#secondLayer{
+  padding-left: 60px;
+}
+
+#secondLayerDescription{
+  padding-left: 60px;
+}
+
+#thirdImg{
+  padding-top: 50px;
+
+}
+
+#lift{
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  font-size: 25px;
+  padding-left: 280px;
+  padding-top: 92px;
+}
+
 .justify-content-center {
-  margin-right: 15px;
+  margin-right: 18px;
 }
 
 .col-2 {
