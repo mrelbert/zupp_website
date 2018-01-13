@@ -1,7 +1,7 @@
 var quiz = document.getElementById('quiz');
 quiz.style.cursor = 'pointer';
 quiz.onclick = function(){
-  window.location.href = "quiz_0.html";
+  window.location.href = "pre_quiz.html";
   //window.location.replace("quiz_0.html");
 }
 

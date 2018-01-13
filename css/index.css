@@ -193,6 +193,13 @@
   margin-top: 20px;
 }
 
+#go_back{
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  text-align: left;
+}
+
+/* ALL HTML */
 
 #sign-in{
   font-family: 'Oswald', sans-serif;
@@ -200,11 +207,7 @@
   text-align: right;
 }
 
-#go_back{
-  font-family: 'Oswald', sans-serif;
-  color: #FEC12E;
-  text-align: left;
-}
+/* INDEX.HTML */
 
 .bubble {
   border-radius: 25px;
@@ -214,4 +217,60 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* AGE.HTML */
+
+#nudgeRight{
+  margin-left: 20px;
+}
+
+.attitudeBubble{
+  border-radius: 25px;
+  border: 1px solid #FEC12E;
+  height: 90px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.historyBubble{
+  border-radius: 25px;
+  border: 1px solid #FEC12E;
+  height: 90px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frequencyBubble{
+  border-radius: 25px;
+  border: 1px solid #FEC12E;
+  height: 90px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goalBubble{
+  border-radius: 25px;
+  border: 1px solid #FEC12E;
+  height: 90px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#test1{
+
+}
+
+#test2{
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  text-align: center;
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <!-- links to bootstrap, master.css, Oswald font, and animate.css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  </head>
+
+  <body class="background">
+    <div class="container">
+
+      <div class="row justify-content-end animated fadeInUp">
+        <div class="col-4">
+          <img src="../img/zupp.png" alt="Zupp Logo", width="100px" height="25px">
+        </div>
+        <div class="col-4">
+          <p id="sign-in">SIGN IN</p>
+        </div>
+      </div>
+
+      <h4 class="greeting">How many do you take regularly?</h4>
+      <div class="row justify-content-center">
+
+        <!-- AGE  -->
+        <div class="row animated fadeInUp">
+
+          <div class="col frequencyBubble" id="none" onclick="addNone()" style="cursor:pointer">None</div>
+          <div class="col frequencyBubble" id="one_to_four" onclick="addOneToFour()" style="cursor:pointer">1-4</div>
+          <div class="col frequencyBubble" id="five_plus" onclick="addFivePlus()" style="cursor:pointer">5+</div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- javascript -->
+    <script src="../js/information.js"></script>
+  </body>
+
+</html>

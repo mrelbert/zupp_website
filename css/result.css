@@ -1,0 +1,62 @@
+.background {
+  background-color: #1A1A1A;
+}
+
+.col-4{
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.url{
+  color: inherit;
+  /* text-decoration: none; */
+  text-align: center;
+}
+
+.url:hover{
+  color: #FEC12E;
+}
+
+.bullets{
+  list-style-type: none;
+}
+
+.recommendation_box{
+  text-align: center;
+}
+
+#sign-in{
+  font-family: 'Oswald', sans-serif;
+  color: #FEC12E;
+  text-align: right;
+}
+
+#recommendations{
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+  word-wrap: break-word;
+}
+
+#information{
+  height: 400px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+
+  /* why did I put this here? */
+  word-wrap: break-word;
+
+  overflow-y: auto;
+}
+
+#unordered_list{
+  padding: 0;
+  margin: 0;
+}
+
+#result_container{
+  padding-top: 32px;
+}
