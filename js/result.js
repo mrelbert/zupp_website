@@ -1,22 +1,31 @@
-function Customer(name, age, blood_type){
+function Customer(name, style, history, frequency, gender, age, goal){
   this.name = name;
+  this.style = style;
+  this.history = history;
+  this.frequency = frequency;
+  this.gender = gender;
   this.age = age;
-  this.bloodType = blood_type;
+  this.goal = goal;
 }
 
 var customerName = localStorage.getItem("customerName");
+var customerStyle = localStorage.getItem("customerStyle");
+var customerHistory = localStorage.getItem("customerHistory");
+var customerFrequency = localStorage.getItem("customerFrequency");
+var customerGender = localStorage.getItem("customerGender");
 var customerAge = localStorage.getItem("customerAge");
-var customerBloodType = localStorage.getItem("customerBloodType");
+var customerGoal = localStorage.getItem("customerGoal");
 
-var newCustomer = new Customer(customerName, customerAge, customerBloodType);
+var newCustomer = new Customer(customerName, customerStyle, customerHistory, customerFrequency, customerGender, customerAge, customerGoal);
 
-if(newCustomer.bloodType == "A"){
+if(newCustomer.gender == "male"){
   var recommendation_box = document.getElementById("recommendations");
   recommendation_box.innerText = "Recommendation 1";
-} else if (newCustomer.bloodType == "B"){
+
+} else if (newCustomer.gender == "female"){
 
   // set of recommendations for blood type B
-  var recommendations = ['protein', 'pre-workout', 'amino acids'];
+  var recommendations = ['recommendation 1', 'recommendation 2', 'recommendation 3', 'recommendation 4'];
 
   var recommendation_box = document.getElementById("recommendations");
 
@@ -38,9 +47,14 @@ if(newCustomer.bloodType == "A"){
   // recommendation_box.innerText = recommendations.length + " Recommendations";
 
   // create <ul></ul>
+  // bullet_points.setAttribute("style", "square");
   var bullet_points = document.createElement("ul");
   bullet_points.id = "unordered_list";
-  // bullet_points.setAttribute("style", "square");
+
+  // showing information box right away for the first recommendation
+  // information box
+  var information = document.getElementById("information");
+  information.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam, purus non posuere finibus, purus dolor varius dui, id rhoncus nunc est non nisi. Integer elit tellus, accumsan porttitor velit eget, rutrum ornare urna. Duis efficitur at nisl in tristique. Mauris egestas congue dui, nec interdum tellus blandit ac. Maecenas ut metus ut augue faucibus consectetur nec vitae velit. Etiam ac nisi lacus. Nam libero eros, volutpat nec rutrum ac, malesuada id tellus. Curabitur varius egestas ligula, non tempus neque dignissim eu. Quisque nec ipsum non dui facilisis porta. Pellentesque sagittis malesuada pulvinar. Duis sit amet nisl quis arcu tempus auctor.";
 
   for(var i = 0; i < recommendations.length; i++){
     // create <a></a>
@@ -48,42 +62,26 @@ if(newCustomer.bloodType == "A"){
     absolute_url.className = "url";
     absolute_url.href = "#";
 
-    // if and else statements regarding recommendations
+    // if and else statements for recommendations
     // is there a more efficient way to traverse?
-    if(recommendations[i] == "protein"){
+    if(recommendations[i] == "recommendation 1"){
       absolute_url.onclick = function(event){
-        var information = document.getElementById("information");
-        // information.innerText = "protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here";
-
-        var div1 = document.createElement('div');
-        var par1 = document.createElement('p');
-        par1.innerText = "protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here";
-        div1.appendChild(par1);
-
-        var div2 = document.createElement('div');
-        var par2 = document.createElement('p');
-        par2.innerText = "protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here";
-        div2.appendChild(par2);
-
-        var div3 = document.createElement('div');
-        var par3 = document.createElement('p');
-        par3.innerText = "protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here protein information here";
-        div3.appendChild(par3);
-
-        information.appendChild(div1);
-        information.appendChild(div2);
-        information.appendChild(div3);
-
+        information.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam, purus non posuere finibus, purus dolor varius dui, id rhoncus nunc est non nisi. Integer elit tellus, accumsan porttitor velit eget, rutrum ornare urna. Duis efficitur at nisl in tristique. Mauris egestas congue dui, nec interdum tellus blandit ac. Maecenas ut metus ut augue faucibus consectetur nec vitae velit. Etiam ac nisi lacus. Nam libero eros, volutpat nec rutrum ac, malesuada id tellus. Curabitur varius egestas ligula, non tempus neque dignissim eu. Quisque nec ipsum non dui facilisis porta. Pellentesque sagittis malesuada pulvinar. Duis sit amet nisl quis arcu tempus auctor.";
       }
-    } else if(recommendations[i] == "pre-workout"){
+    } else if(recommendations[i] == "recommendation 2"){
       absolute_url.onclick = function(event){
         var information = document.getElementById("information");
-        information.innerText = "pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here pre-workout information here";
+        information.innerText = "recommendation 2 box";
       }
-    } else if(recommendations[i] == "amino acids"){
+    } else if(recommendations[i] == "recommendation 3"){
       absolute_url.onclick = function(event){
         var information = document.getElementById("information");
-        information.innerText = "amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here amino acids information here";
+        information.innerText = "recommendation 3 box";
+      }
+    } else if(recommendations[i] == "recommendation 4"){
+      absolute_url.onclick = function(event){
+        var information = document.getElementById("information");
+        information.innerText = "recommendation 4 box";
       }
     }
 
@@ -103,14 +101,10 @@ if(newCustomer.bloodType == "A"){
   recommendation_box.appendChild(bullet_points);
 
   // INFORMATION BOX
-  // LOREM IPSUM text
 
-} else if (newCustomer.bloodType == "O"){
-  var recommendation_box = document.getElementById("recommendations");
-  recommendation_box.innerText = "Recommendation 3";
-} else {
-  var recommendation_box = document.getElementById("recommendations");
-  recommendation_box.innerText = "Recommendation 3";
+  // create a button
+
+
 }
 
 // document.getElementById("test1").innerText ="Hey " + newCustomer.name + ", ";
@@ -120,3 +114,9 @@ if(newCustomer.bloodType == "A"){
 // var text = document.createTextNode("Hello World");
 // div.appendChild(text);
 // document.body.appendChild(div);
+
+
+// function for button
+var viewCart = function(){
+  window.location.href = "https://www.zuppclub.com/cart"
+}

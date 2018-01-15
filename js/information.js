@@ -9,19 +9,19 @@ var addName = function(){
 // functions for attitude.html
 
 var addInformed = function(){
-  var customerStyle = document.getElementById("informed").value;
+  var customerStyle = "informed";
   localStorage.setItem("customerStyle", customerStyle);
   window.location.href = "history.html";
 }
 
 var addCurious = function(){
-  var customerStyle = document.getElementById("curious").value;
+  var customerStyle = "curious";
   localStorage.setItem("customerStyle", customerStyle);
   window.location.href = "history.html";
 }
 
 var addSkeptical = function(){
-  var customerStyle = document.getElementById("skeptical").value;
+  var customerStyle = "skeptical";
   localStorage.setItem("customerStyle", customerStyle);
   window.location.href = "history.html";
 }
@@ -29,19 +29,19 @@ var addSkeptical = function(){
 // functions for history.html
 
 var addLongTime = function(){
-  var customerHistory = document.getElementById("long_time").value;
+  var customerHistory = "long_time";
   localStorage.setItem("customerHistory", customerHistory);
   window.location.href = "frequency.html";
 }
 
 var addOnOff = function(){
-  var customerHistory = document.getElementById("on_off").value;
+  var customerHistory = "on_off";
   localStorage.setItem("customerHistory", customerHistory);
   window.location.href = "frequency.html";
 }
 
 var addNever = function(){
-  var customerHistory = document.getElementById("never").value;
+  var customerHistory = "never";
   localStorage.setItem("customerHistory", customerHistory);
   window.location.href = "gender.html";
 }
@@ -49,19 +49,19 @@ var addNever = function(){
 // functions for frequency.html
 
 var addNone = function(){
-  var customerFrequency = document.getElementById("none").value;
+  var customerFrequency = "none";
   localStorage.setItem("customerFrequency", customerFrequency);
   window.location.href = "gender.html";
 }
 
 var addOneToFour = function(){
-  var customerFrequency = document.getElementById("one_to_four").value;
+  var customerFrequency = "one_to_four";
   localStorage.setItem("customerFrequency", customerFrequency);
   window.location.href = "gender.html";
 }
 
 var addFivePlus = function(){
-  var customerFrequency = document.getElementById("five_plus").value;
+  var customerFrequency = "five_plus";
   localStorage.setItem("customerFrequency", customerFrequency);
   window.location.href = "gender.html";
 }
@@ -69,13 +69,14 @@ var addFivePlus = function(){
 // functions for gender.html
 
 var addMale = function(){
-  var customerGender = document.getElementById("male").value;
+  var customerGender = "male";
+  console.log(customerGender);
   localStorage.setItem("customerGender", customerGender);
   window.location.href = "age.html";
 }
 
 var addFemale = function(){
-  var customerGender = document.getElementById("female").value;
+  var customerGender = "female"
   localStorage.setItem("customerGender", customerGender);
   window.location.href = "age.html";
 }
@@ -91,31 +92,31 @@ var addAge = function(){
 //
 
 var addGeneralHealth = function(){
-  var customerGoal = document.getElementById("general_health").value;
+  var customerGoal = "general_health";
   localStorage.setItem("customerGoal", customerGoal);
   window.location.href = "result.html"; // for now
 }
 
 var addFatLoss = function(){
-  var customerGoal = document.getElementById("fat_loss").value;
+  var customerGoal = "fat_loss";
   localStorage.setItem("customerGoal", customerGoal);
   window.location.href = "result.html"; // for now
 }
 
 var addGainMass = function(){
-  var customerGoal = document.getElementById("gain_mass").value;
+  var customerGoal = "gain_mass";
   localStorage.setItem("customerGoal", customerGoal);
   window.location.href = "result.html"; // for now
 }
 
 var addAthleticPerformance = function(){
-  var customerGoal = document.getElementById("athletic_performance").value;
+  var customerGoal = "athletic_performance";
   localStorage.setItem("customerGoal", customerGoal);
   window.location.href = "result.html"; // for now
 }
 
 var addStrength = function(){
-  var customerGoal = document.getElementById("strength").value;
+  var customerGoal = "strength";
   localStorage.setItem("customerGoal", customerGoal);
   window.location.href = "result.html"; // for now
 }
