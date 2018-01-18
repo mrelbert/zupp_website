@@ -265,6 +265,48 @@
   justify-content: center;
 }
 
+.highlight{
+  border-radius: 25px;
+  border: 1px solid #FEC12E;
+  height: 90px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: #FEC12E;
+}
+
+.currentBubble{
+  border-radius: 25px;
+  border: 1px solid #FEC12E;
+  height: 90px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experienceBubble{
+  border-radius: 25px;
+  border: 1px solid #FEC12E;
+  height: 90px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recoveryBubble{
+  border-radius: 25px;
+  border: 1px solid #FEC12E;
+  height: 90px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #test1{
 
 }
@@ -273,4 +315,8 @@
   font-family: 'Oswald', sans-serif;
   color: #FEC12E;
   text-align: center;
+}
+
+#continue{
+  margin-top: 80px;
 }

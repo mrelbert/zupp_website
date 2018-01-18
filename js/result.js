@@ -1,22 +1,32 @@
-function Customer(name, style, history, frequency, gender, age, goal){
-  this.name = name;
-  this.style = style;
-  this.history = history;
-  this.frequency = frequency;
+function Customer(gender){
   this.gender = gender;
-  this.age = age;
-  this.goal = goal;
 }
 
-var customerName = localStorage.getItem("customerName");
-var customerStyle = localStorage.getItem("customerStyle");
-var customerHistory = localStorage.getItem("customerHistory");
-var customerFrequency = localStorage.getItem("customerFrequency");
-var customerGender = localStorage.getItem("customerGender");
-var customerAge = localStorage.getItem("customerAge");
-var customerGoal = localStorage.getItem("customerGoal");
+var customerName = localStorage.getItem("customerName"); // 1st
+var customerAttitude = localStorage.getItem("customerStyle"); // 2nd
+var customerHistory = localStorage.getItem("customerHistory"); // 3rd
+var customerFrequency = localStorage.getItem("customerFrequency"); // 4th
+var customerGender = localStorage.getItem("customerGender"); // 5th
+var customerAge = localStorage.getItem("customerAge"); // 6th
+var customerCurrentState = localStorage.getItem("customerCurrent"); // 7th
+var customerExperience = localStorage.getItem("customerExperience");
 
-var newCustomer = new Customer(customerName, customerStyle, customerHistory, customerFrequency, customerGender, customerAge, customerGoal);
+// set of goals :: 8th
+var customerGoal_1 = localStorage.getItem("goal_general_health");
+var customerGoal_2 = localStorage.getItem("goal_fat_loss");
+var customerGoal_3 = localStorage.getItem("goal_gain_mass");
+var customerGoal_4 = localStorage.getItem("goal_athletic_performance");
+var customerGoal_5 = localStorage.getItem("goal_strength");
+
+var customerVitamins = localStorage.getItem("customerVitamins"); // 9th
+var customerGainMass = localStorage.getItem("customerGainMass"); // 10th
+var customerSportStyle = localStorage.getItem("customerSportStyle"); // 11th
+var customerSleep = localStorage.getItem("customerSleep"); // 12th
+var customerEnergy = localStorage.getItem("customerEnergy"); // 13th
+var customerRecovery = localStorage.getItem("customerRecovery"); // 14th
+var customerDiet = localStorage.getItem("customerDiet"); // 15th
+
+var newCustomer = new Customer(customerGender); // add parameters
 
 if(newCustomer.gender == "male"){
   var recommendation_box = document.getElementById("recommendations");
@@ -67,7 +77,9 @@ if(newCustomer.gender == "male"){
     if(recommendations[i] == "recommendation 1"){
       absolute_url.onclick = function(event){
         information.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam, purus non posuere finibus, purus dolor varius dui, id rhoncus nunc est non nisi. Integer elit tellus, accumsan porttitor velit eget, rutrum ornare urna. Duis efficitur at nisl in tristique. Mauris egestas congue dui, nec interdum tellus blandit ac. Maecenas ut metus ut augue faucibus consectetur nec vitae velit. Etiam ac nisi lacus. Nam libero eros, volutpat nec rutrum ac, malesuada id tellus. Curabitur varius egestas ligula, non tempus neque dignissim eu. Quisque nec ipsum non dui facilisis porta. Pellentesque sagittis malesuada pulvinar. Duis sit amet nisl quis arcu tempus auctor.";
+
       }
+
     } else if(recommendations[i] == "recommendation 2"){
       absolute_url.onclick = function(event){
         var information = document.getElementById("information");
