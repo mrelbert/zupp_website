@@ -25,6 +25,7 @@ var customerSleep = localStorage.getItem("customerSleep"); // 12th
 var customerEnergy = localStorage.getItem("customerEnergy"); // 13th
 var customerRecovery = localStorage.getItem("customerRecovery"); // 14th
 var customerDiet = localStorage.getItem("customerDiet"); // 15th
+var customerEmail = localStorage.getItem("customerEmail"); // 16th
 
 var newCustomer = new Customer(customerGender); // add parameters
 
@@ -76,8 +77,22 @@ if(newCustomer.gender == "male"){
     // is there a more efficient way to traverse?
     if(recommendations[i] == "recommendation 1"){
       absolute_url.onclick = function(event){
-        information.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean aliquam, purus non posuere finibus, purus dolor varius dui, id rhoncus nunc est non nisi. Integer elit tellus, accumsan porttitor velit eget, rutrum ornare urna. Duis efficitur at nisl in tristique. Mauris egestas congue dui, nec interdum tellus blandit ac. Maecenas ut metus ut augue faucibus consectetur nec vitae velit. Etiam ac nisi lacus. Nam libero eros, volutpat nec rutrum ac, malesuada id tellus. Curabitur varius egestas ligula, non tempus neque dignissim eu. Quisque nec ipsum non dui facilisis porta. Pellentesque sagittis malesuada pulvinar. Duis sit amet nisl quis arcu tempus auctor.";
 
+        // getting rid of Lorem ipsum text
+        information.innerText = "";
+
+        // hello world
+        var div = document.createElement("div");
+        var text = document.createTextNode("hello world");;
+        div.appendChild(text);
+        information.appendChild(div);
+
+        // zupp logo
+        var image = document.createElement("IMG");
+        image.setAttribute("src", "../img/zupp.png");
+        image.setAttribute("width", "104");
+        image.setAttribute("height", "28");
+        information.appendChild(image);
       }
 
     } else if(recommendations[i] == "recommendation 2"){

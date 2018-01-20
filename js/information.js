@@ -421,11 +421,19 @@ var addNotSure = function(){
 var addNotVeganOrVegetarian = function(){
   var customerDiet = "vegan_or_vegetarian";
   localStorage.setItem("customerDiet", customerDiet);
-  window.location.href = "result.html";
+  window.location.href = "email.html";
 }
 
 var addVeganOrVegetarian = function(){
   var customerDiet = "not_vegan_or_vegetarian";
   localStorage.setItem("customerDiet", customerDiet);
+  window.location.href = "email.html";
+}
+
+// functions for email.html
+
+var addEmail = function(){
+  var customerEmail = document.getElementById("email").value;
+  localStorage.setItem("customerEmail", customerEmail);
   window.location.href = "result.html";
 }
