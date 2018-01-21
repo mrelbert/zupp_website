@@ -24,6 +24,7 @@
   list-style-type: none;
   margin-bottom: 11px;
   text-align: right;
+  font-size: 1.1em;
 }
 
 .pills{
@@ -33,19 +34,50 @@
 
 .recommendation_box_text{
   text-align: center;
+  font-size: 1.1em;
 }
 
 .recommendation_box_number{
   margin: auto;
   text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
   border: 3px solid #FEC12E;
   border-radius: 100%;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+  box-shadow: 1px 1px 1px #FEC12E;
+  /* width: 80px;
+  height: 80px; */
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .center-button{
-  padding-left: 655px;
+  /* padding-left: 655px; */
+}
+
+.banner {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrapper{
+  padding-top: 20px;
+  padding-left: 36px;
+}
+
+.compartment{
+  margin-bottom: 40px;
+}
+
+.statements{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.reasoning{
+  width: 65%;
 }
 
 #sign-in{
@@ -62,7 +94,7 @@
 }
 
 #information{
-  height: 400px;
+  height: 700px;
   font-family: 'Oswald', sans-serif;
   font-size: 15px;
   color: #FEC12E;
@@ -74,7 +106,7 @@
 }
 
 #unordered_list{
-  padding-right: 25px;
+  padding-right: 30%;
   padding-left: 0;
   margin: 0;
 }
@@ -85,6 +117,20 @@
 
 #button{
   font-family: 'Oswald', sans-serif;
-  color: #FEC12E;
-  font-size: 20px;
+  color: black;
+  font-size: 17px;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 28%;
+
+  border-radius: 25px;
+  height: 70px;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 1px 2px 6px #FEC12E;
+  background-color: #FEC12E;
+  font-weight: bold;
 }

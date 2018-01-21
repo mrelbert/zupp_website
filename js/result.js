@@ -78,37 +78,98 @@ if(newCustomer.gender == "male"){
 
     // if and else statements for recommendations
     // is there a more efficient way to traverse?
-    if(recommendations[i] == "recommendation 1"){
+    if(recommendations[i] == "Pre-workout"){
       absolute_url.onclick = function(event){
 
         // getting rid of Lorem ipsum text
         information.innerText = "";
 
         // hello world
-        var div = document.createElement("div");
-        var text = document.createTextNode("hello world");;
-        div.appendChild(text);
-        information.appendChild(div);
+        // var div = document.createElement("div");
+        // var text = document.createTextNode("hello world");;
+        // div.appendChild(text);
+        // information.appendChild(div);
 
         // zupp logo
         var image = document.createElement("IMG");
-        image.setAttribute("src", "../img/zupp.png");
-        image.setAttribute("width", "104");
-        image.setAttribute("height", "28");
+        image.className = "banner";
+        image.setAttribute("src", "../img/banner.png");
+        // image.setAttribute("width", "104");
+        // image.setAttribute("height", "28");
         information.appendChild(image);
+
+        var wrapper = document.createElement("div");
+        wrapper.className = "wrapper";
+
+        // 1st compartment
+
+        var div1 = document.createElement("div");
+        div1.className = "compartment";
+
+        var text1_1 = document.createElement("p");
+        text1_1.className = "statements";
+        text1_1.innerText = "You live above 37 latitude";
+
+        // var br1 = document.createElement("br");
+
+        var text1_2 = document.createElement("p");
+        text1_2.className = "reasoning";
+        text1_2.innerText = "It's hard to get the vitamin D you need from sun exposure alone if you live in the northern half of the U.S., based on weather and cloud cover patterns.";
+
+        // 2nd 1st_compartment
+
+        var div2 = document.createElement("div");
+        div2.className = "compartment";
+
+        var text2_1 = document.createElement("p");
+        text2_1.className = "statements";
+        text2_1.innerText = "Vitamin D supports healthier bones";
+
+        // var br2 = document.createElement("br");
+
+        var text2_2 = document.createElement("p");
+        text2_2.className = "reasoning";
+        text2_2.innerText = "Getting enough Vitamin D is essential to overall health and maintaining healthy bones. A recent study done in 2011 showed that over 70% of Americans are not getting enough Vitamin D.";
+
+        div1.appendChild(text1_1);
+        // div1.appendChild(br1);
+        div1.appendChild(text1_2);
+
+        div2.appendChild(text2_1);
+        // div2.appendChild(br2);
+        div2.appendChild(text2_2);
+
+        wrapper.appendChild(div1);
+        wrapper.appendChild(div2);
+
+        // button
+
+        var div_for_button = document.createElement("div");
+        div_for_button.className = "button_compartment";
+
+        var button = document.createElement("h3");
+        button.id = "button";
+        button.innerText = "VIEW/UPDATE MY BUNDLE";
+        button.style.cursor = "pointer";
+        button.addEventListener("click", viewCart);
+
+        div_for_button.appendChild(button);
+        wrapper.appendChild(div_for_button);
+
+        information.appendChild(wrapper);
       }
 
-    } else if(recommendations[i] == "recommendation 2"){
+    } else if(recommendations[i] == "Whey protein"){
       absolute_url.onclick = function(event){
         var information = document.getElementById("information");
         information.innerText = "recommendation 2 box";
       }
-    } else if(recommendations[i] == "recommendation 3"){
+    } else if(recommendations[i] == "BCAA"){
       absolute_url.onclick = function(event){
         var information = document.getElementById("information");
         information.innerText = "recommendation 3 box";
       }
-    } else if(recommendations[i] == "recommendation 4"){
+    } else if(recommendations[i] == "Creatine"){
       absolute_url.onclick = function(event){
         var information = document.getElementById("information");
         information.innerText = "recommendation 4 box";
