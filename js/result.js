@@ -29,6 +29,9 @@ var customerEmail = localStorage.getItem("customerEmail"); // 16th
 
 var newCustomer = new Customer(customerGender); // add parameters
 
+// for small pill images
+var counter = 1;
+
 if(newCustomer.gender == "male"){
   var recommendation_box = document.getElementById("recommendations");
   recommendation_box.innerText = "Recommendation 1";
@@ -36,13 +39,13 @@ if(newCustomer.gender == "male"){
 } else if (newCustomer.gender == "female"){
 
   // set of recommendations for blood type B
-  var recommendations = ['recommendation 1', 'recommendation 2', 'recommendation 3', 'recommendation 4'];
+  var recommendations = ['Pre-workout', 'Whey protein', 'BCAA', 'Creatine'];
 
   var recommendation_box = document.getElementById("recommendations");
 
   var number_of_recommendations_box = document.createElement('div');
   var number_of_recommendations = document.createElement('h1');
-  number_of_recommendations.className = "recommendation_box";
+  number_of_recommendations.className = "recommendation_box_number";
   number_of_recommendations.innerText = recommendations.length;
   number_of_recommendations_box.appendChild(number_of_recommendations);
 
@@ -50,7 +53,7 @@ if(newCustomer.gender == "male"){
 
   var text_for_recommendation = document.createElement('div');
   var text = document.createElement('p');
-  text.className = "recommendation_box";
+  text.className = "recommendation_box_text";
   text.innerText = "recommendations";
   text_for_recommendation.appendChild(text);
 
@@ -116,6 +119,14 @@ if(newCustomer.gender == "male"){
     var item = document.createElement("li");
     item.className = "bullets";
     item.innerText = recommendations[i];
+
+    var pill = document.createElement("IMG");
+    pill.className = "pills";
+    pill.setAttribute("src", "../img/vitamin_" + counter + ".jpg");
+    pill.setAttribute("width", "28");
+    pill.setAttribute("height", "28");
+    item.appendChild(pill);
+    counter++;
 
     // store each bullet point within <a></a>
     absolute_url.appendChild(item);
