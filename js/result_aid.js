@@ -42,5 +42,53 @@ var first_show = function(){
   div3.appendChild(dummy_reasoning);
   wrapper.appendChild(div3);
 
+  var div4 = document.createElement("div");
+  div4.className = "compartment";
+  var dummy_statement2 = document.createElement("p");
+  dummy_statement2.className = "statements";
+  dummy_statement2.innerText = "Lorem Ipsum";
+  var dummy_reasoning2 = document.createElement("p");
+  dummy_reasoning2.className = "reasoning";
+  dummy_reasoning2.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
+  div4.appendChild(dummy_statement2);
+  div4.appendChild(dummy_reasoning2);
+  wrapper.appendChild(div4);
+
+  var div5 = document.createElement("div");
+  div5.className = "compartment";
+  var dummy_statement3 = document.createElement("p");
+  dummy_statement3.className = "statements";
+  dummy_statement3.innerText = "Lorem Ipsum";
+  var dummy_reasoning3 = document.createElement("p");
+  dummy_reasoning3.className = "reasoning";
+  dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
+  div5.appendChild(dummy_statement3);
+  div5.appendChild(dummy_reasoning3);
+  wrapper.appendChild(div5);
+
+  var div6 = document.createElement("div");
+  div6.className = "compartment";
+  var dummy_statement4 = document.createElement("p");
+  dummy_statement4.className = "statements";
+  dummy_statement4.innerText = "Lorem Ipsum";
+  var dummy_reasoning4 = document.createElement("p");
+  dummy_reasoning4.className = "reasoning";
+  dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
+  div6.appendChild(dummy_statement4);
+  div6.appendChild(dummy_reasoning4);
+  wrapper.appendChild(div6);
+
+  var div7 = document.createElement("div");
+  div7.className = "compartment";
+  var dummy_statement5 = document.createElement("p");
+  dummy_statement5.className = "statements";
+  dummy_statement5.innerText = "Lorem Ipsum";
+  var dummy_reasoning5 = document.createElement("p");
+  dummy_reasoning5.className = "reasoning";
+  dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
+  div7.appendChild(dummy_statement4);
+  div7.appendChild(dummy_reasoning4);
+  wrapper.appendChild(div7);  
+
   information.appendChild(wrapper);
 }

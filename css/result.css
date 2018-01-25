@@ -94,7 +94,7 @@
 }
 
 #information{
-  height: 600px;
+  height: 700px;
   font-family: 'Oswald', sans-serif;
   font-size: 15px;
   color: #FEC12E;
@@ -103,6 +103,9 @@
   word-wrap: break-word;
 
   overflow-y: auto;
+
+  /* shadow */
+  box-shadow: 5px 4px 18px #FEC12E;
 }
 
 #unordered_list{
@@ -120,7 +123,7 @@
   color: black;
   font-size: 17px;
   position: absolute;
-  bottom: 28%;
+  bottom: 5%;
   margin-left: 23%;
 
   border-radius: 25px;
