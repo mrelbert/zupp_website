@@ -1,5 +1,7 @@
 .background {
   background-color: #1A1A1A;
+  overflow-y: auto;
+  height: 300px;
 }
 
 .col-4{
@@ -94,7 +96,7 @@
 }
 
 #information{
-  height: 700px;
+  height: 400px;
   font-family: 'Oswald', sans-serif;
   font-size: 15px;
   color: #FEC12E;
@@ -102,7 +104,7 @@
   /* why did I put this here? */
   word-wrap: break-word;
 
-  overflow-y: auto;
+  overflow-y: hidden;
 
   /* shadow */
   box-shadow: 5px 4px 18px #FEC12E;
@@ -122,9 +124,9 @@
   font-family: 'Oswald', sans-serif;
   color: black;
   font-size: 17px;
-  position: absolute;
+  position: fixed;
   bottom: 5%;
-  margin-left: 23%;
+  /* margin-left: 35%; */
 
   border-radius: 25px;
   height: 70px;
