@@ -1,7 +1,6 @@
 .background {
   background-color: #1A1A1A;
-  overflow-y: auto;
-  height: 300px;
+  overflow-y: scroll;
 }
 
 .col-4{
