@@ -88,6 +88,7 @@
 }
 
 #recommendations{
+  position: fixed;
   font-family: 'Oswald', sans-serif;
   font-size: 15px;
   color: #FEC12E;
@@ -95,7 +96,9 @@
 }
 
 #information{
-  height: 400px;
+  margin-left: 23%;
+  padding: 0;
+  height: 1750px;
   font-family: 'Oswald', sans-serif;
   font-size: 15px;
   color: #FEC12E;
@@ -103,7 +106,7 @@
   /* why did I put this here? */
   word-wrap: break-word;
 
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 
   /* shadow */
   box-shadow: 5px 4px 18px #FEC12E;
@@ -117,6 +120,8 @@
 
 #result_container{
   padding-top: 32px;
+  position: relative;
+  margin-bottom: 145px;
 }
 
 #button{
@@ -124,7 +129,8 @@
   color: black;
   font-size: 17px;
   position: fixed;
-  bottom: 5%;
+  bottom: 2%;
+  margin-top: 45px;
   /* margin-left: 35%; */
 
   border-radius: 25px;

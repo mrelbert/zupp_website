@@ -139,19 +139,19 @@ var viewCart = function(){
   window.location.href = "https://www.zuppclub.com/cart"
 }
 
-let b = $(document);
-let d = $('#information');
-let scrollamt = 0;
-b.on('wheel', function(e) {
-    if((scrollamt <= d[0].scrollHeight - d[0].offsetHeight) && (b.scrollTop() == 0)){
-        e.preventDefault();
-    } else{
-        scrollamt = d[0].scrollHeight - d[0].offsetHeight;
-        return;
-    }
-    scrollamt < 0 ? scrollamt = 0 : null;
-    e.originalEvent.deltaY > 0 ? scrollamt +=100 : scrollamt -=100;
-    d.animate({
-       scrollTop: scrollamt
-    },50);
-})
+// let b = $(document);
+// let d = $('#information');
+// let scrollamt = 0;
+// b.on('wheel', function(e) {
+//     if((scrollamt <= d[0].scrollHeight - d[0].offsetHeight) && (b.scrollTop() == 0)){
+//         e.preventDefault();
+//     } else{
+//         scrollamt = d[0].scrollHeight - d[0].offsetHeight;
+//         return;
+//     }
+//     scrollamt < 0 ? scrollamt = 0 : null;
+//     e.originalEvent.deltaY > 0 ? scrollamt +=100 : scrollamt -=100;
+//     d.animate({
+//        scrollTop: scrollamt
+//     },50);
+// })
