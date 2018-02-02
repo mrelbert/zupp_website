@@ -88,7 +88,29 @@ var first_show = function(){
   dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
   div7.appendChild(dummy_statement4);
   div7.appendChild(dummy_reasoning4);
-  wrapper.appendChild(div7);  
+  wrapper.appendChild(div7);
 
   information.appendChild(wrapper);
+}
+
+var setUp = function(){
+  var recommendation_box = document.getElementById("recommendations");
+  var recommendations_length = Object.keys(goal_object).length;
+
+  var number_of_recommendations_box = document.createElement('div');
+  var number_of_recommendations = document.createElement('h1');
+  number_of_recommendations.className = "recommendation_box_number";
+  number_of_recommendations.innerText = recommendations_length;
+  number_of_recommendations_box.appendChild(number_of_recommendations);
+
+  recommendation_box.appendChild(number_of_recommendations_box);
+
+  var text_for_recommendation = document.createElement('div');
+  var text = document.createElement('p');
+  text.className = "recommendation_box_text";
+  text.innerText = "recommendations";
+  text_for_recommendation.appendChild(text);
+
+  recommendation_box.appendChild(text_for_recommendation);
+  // recommendation_box.innerText = recommendations.length + " Recommendations";
 }
