@@ -14,7 +14,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
     <!-- firebase -->
-    <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
   </head>
 
   <body class="background">
@@ -33,21 +34,33 @@
       <div class="row justify-content-center">
 
         <!-- FORM -->
-        <form>
-          <div class="form-row" id="nudgeRight">
-            <div class="col-auto">
-              <input type="text" class="form-control" placeholder="Name" id="name">
+        <form onsubmit="addName()">
+          <div class="form-row form-group" id="nudgeRight">
+            <div class="col-auto form-group">
+              <input type="text" minlength="2" pattern="'/^[A-Z]+$/i'" class="form-control" placeholder="Name" id="name" name="customer_name" required>
             </div>
-            <div class="col-auto">
-              <input type="button" onclick="addName()" value="Submit" class="btn btn-primary mb-2" id="submitName"/>
+            <div class="col-auto form-group">
+              <input type="submit" value="Submit" onclick="addName()" class="btn btn-primary mb-2" id="submitName">
             </div>
+            <!-- <div class="form-group">
+              <button type="submit" name="btn btn-primary">Submit</button>
+            </div> -->
           </div>
         </form>
+        <br>
 
       </div>
+
+      <!-- <div class="row justify-content-center">
+        <p id="validate_name"></p>
+      </div> -->
+
     </div>
     <!-- javascript -->
     <script src="../js/information.js"></script>
+    <!-- <script src="../js/name_validation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js"></script> -->
+
   </body>
 
 </html>

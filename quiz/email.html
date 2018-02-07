@@ -17,7 +17,7 @@
     <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
   </head>
 
-  <body class="background">
+  <body class="background" id="listenForEnter">
     <div class="container">
 
       <div class="row justify-content-end animated fadeInUp">
@@ -36,7 +36,7 @@
         <form>
           <div class="form-row" id="nudgeRight">
             <div class="col-auto">
-              <input type="text" class="form-control" placeholder="Email" id="email">
+              <input type="text" class="form-control" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/" placeholder="Email" id="email" required>
             </div>
             <div class="col-auto">
               <input type="button" onclick="addEmail()" value="Submit" class="btn btn-primary mb-2" id="submitName"/>

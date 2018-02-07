@@ -63,6 +63,29 @@
   max-height: 100%;
 }
 
+.banner2 {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.2;
+}
+
+.frame {
+  position: relative;
+}
+
+.frame_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.frame_content p {
+  color: white;
+}
+
+.frame_content
+
 .wrapper{
   padding-top: 20px;
   padding-left: 36px;
@@ -70,6 +93,8 @@
 
 .compartment{
   margin-bottom: 40px;
+  padding-top: 20px;
+  padding-left: 36px;
 }
 
 .statements{
@@ -78,7 +103,7 @@
 }
 
 .reasoning{
-  width: 65%;
+  width: 80%;
 }
 
 #sign-in{
@@ -100,7 +125,7 @@
   margin-left: 23%;
   margin-bottom: 12%;
   padding: 0;
-  height: 325%;
+  height: 235%;
   font-family: 'Oswald', sans-serif;
   font-size: 15px;
   color: #FEC12E;

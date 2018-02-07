@@ -33,13 +33,13 @@
       <div class="row justify-content-center">
 
         <!-- FORM -->
-        <form>
-          <div class="form-row" id="nudgeRight">
-            <div class="col-auto">
-              <input type="text" class="form-control" placeholder="Enter your age" id="age">
+        <form onsubmit="addAge()">
+          <div class="form-row form-group" id="nudgeRight">
+            <div class="col-auto form-group">
+              <input type="number" class="form-control" pattern="/^\d+$/" placeholder="Enter your age" id="age" name="customer_age" required>
             </div>
-            <div class="col-auto">
-              <input type="button" onclick="addAge()" value="Submit" class="btn btn-primary mb-2" id="submitAge"/>
+            <div class="col-auto form-group">
+              <input type="submit" value="Submit" onclick="addAge()" class="btn btn-primary mb-2" id="submitAge"/>
             </div>
           </div>
         </form>

@@ -110,11 +110,13 @@ bullet_points.id = "unordered_list";
 // information box
 var information = document.getElementById("information");
 
-// same as first recommendation onclick
-// calls from result_aid.js
-first_show();
+// first info to show
+if(Object.keys(goal_object)[0] == "Fish oil"){
+  fishOil();
+}
 
 for(var key in goal_object){
+  console.log(key);
 
   var absolute_url = document.createElement('a');
   absolute_url.className = "url";
@@ -167,7 +169,7 @@ for(var key in goal_object){
     }
   } else if(key == "Fish oil"){
     absolute_url.onclick = function(event){
-      first_show(); // from result_aid.js
+      fishOil(); // from result_aid.js
     }
   } else if(key == "Creatine"){
     absolute_url.onclick = function(event){

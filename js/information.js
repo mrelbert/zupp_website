@@ -2,8 +2,23 @@
 
 var addName = function(){
   var customerName = document.getElementById("name").value;
-  localStorage.setItem("customerName", customerName);
-  window.location.href = "attitude.html";
+  if(/^[A-Z ]+$/i.test(customerName) && customerName.length >= 2){
+    localStorage.setItem("customerName", customerName);
+    event.preventDefault();
+    window.location.href = "attitude.html";
+  } else {
+    console.log(customerName + " is invalid");
+  }
+
+  // var validate;
+  // if(!/^[a-zA-z]+$/.test(customerName)){
+  //   validate = "Input was invalid";
+  // } else {
+  //   localStorage.setItem("customerName", customerName);
+  //   window.location.href = "attitude.html";
+  // }
+  //
+  // document.getElementById("validate_name").innerText = validate;
 }
 
 // functions for attitude.html
@@ -85,8 +100,15 @@ var addFemale = function(){
 
 var addAge = function(){
   var customerAge = document.getElementById("age").value;
-  localStorage.setItem("customerAge", customerAge);
-  window.location.href = "current_state.html";
+  var age = Number(customerAge);
+  if(/^\d+$/.test(customerAge) && (age > 0 && age < 100)){
+    localStorage.setItem("customerAge", customerAge);
+    event.preventDefault();
+    window.location.href = "current_state.html";
+  } else {
+    alert("You have entered an invalid age!")
+    event.preventDefault();
+  }
 }
 
 // functions for goal.html
@@ -434,6 +456,12 @@ var addVeganOrVegetarian = function(){
 
 var addEmail = function(){
   var customerEmail = document.getElementById("email").value;
-  localStorage.setItem("customerEmail", customerEmail);
-  window.location.href = "result.html";
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(customerEmail)){
+    localStorage.setItem("customerEmail", customerEmail);
+    event.preventDefault();
+    window.location.href = "result.html";
+ } else {
+   alert("You have entered an invalid email address!");
+ }
+
 }
