@@ -140,7 +140,8 @@
 }
 
 #unordered_list{
-  padding-right: 30%;
+  width: 225px;
+  padding-right: 22%;
   padding-left: 0;
   margin: 0;
 }

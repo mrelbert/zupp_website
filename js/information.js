@@ -229,19 +229,38 @@ var addStrength = function(){
 
 var addOptions = function(){
 
+  var customer_goal_fat_loss = localStorage.getItem("goal_fat_loss");
+  var customer_goal_strength = localStorage.getItem("goal_strength");
   var customer_goal_general_health = localStorage.getItem("goal_general_health");
   var customer_goal_gain_mass = localStorage.getItem("goal_gain_mass");
   var customer_goal_athletic_performance = localStorage.getItem("goal_athletic_performance");
-  console.log(customer_goal_athletic_performance);
 
-  if(customer_goal_general_health == "general_health"){
-    window.location.href = "multivitamin.html";
-  } else if(customer_goal_gain_mass == "gain_mass"){
-    window.location.href = "weight.html";
-  } else if(customer_goal_athletic_performance == "athletic_performance"){
-    window.location.href = "sport.html";
+  var list_of_goals = [];
+  list_of_goals.push(customer_goal_fat_loss);
+  list_of_goals.push(customer_goal_strength);
+  list_of_goals.push(customer_goal_general_health);
+  list_of_goals.push(customer_goal_gain_mass);
+  list_of_goals.push(customer_goal_athletic_performance);
+
+  var picked_a_goal = false;
+  for(var i = 0; i < list_of_goals.length; i++){
+    if(list_of_goals[i] != "null"){
+      picked_a_goal = true;
+    }
+  }
+
+  if(picked_a_goal){
+    if(customer_goal_general_health == "general_health"){
+      window.location.href = "multivitamin.html";
+    } else if(customer_goal_gain_mass == "gain_mass"){
+      window.location.href = "weight.html";
+    } else if(customer_goal_athletic_performance == "athletic_performance"){
+      window.location.href = "sport.html";
+    } else {
+      window.location.href = "sleep.html";
+    }
   } else {
-    window.location.href = "sleep.html";
+    alert("You must pick at least 1 goal!");
   }
 
 }
@@ -455,6 +474,7 @@ var addVeganOrVegetarian = function(){
 // functions for email.html
 
 var addEmail = function(){
+
   var customerEmail = document.getElementById("email").value;
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(customerEmail)){
     localStorage.setItem("customerEmail", customerEmail);

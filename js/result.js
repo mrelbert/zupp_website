@@ -113,6 +113,24 @@ var information = document.getElementById("information");
 // first info to show
 if(Object.keys(goal_object)[0] == "Fish oil"){
   fishOil();
+} else if(Object.keys(goal_object)[0] == "Multivitamin"){
+  multiVitamin();
+} else if(Object.keys(goal_object)[0] == "Carnitine"){
+  carnitine();
+} else if(Object.keys(goal_object)[0] == "Green tea extract"){
+  greenTeaExtract();
+} else if(Object.keys(goal_object)[0] == "Glutamine"){
+  glutamine();
+} else if(Object.keys(goal_object)[0] == "Creatine"){
+  creatine();
+} else if(Object.keys(goal_object)[0] == "Whey Protein"){
+  wheyProtein();
+} else if(Object.keys(goal_object)[0] == "Pre-workout"){
+  preWorkout();
+} else if(Object.keys(goal_object)[0] == "BCAA"){
+  bcaa();
+} else if(Object.keys(goal_object)[0] == "B-vitamins"){
+  b_vitamins();
 }
 
 for(var key in goal_object){
