@@ -13,7 +13,7 @@ function Customer(gender, general_health, fat_loss, gain_mass, athletic_performa
 }
 
 var customerName = localStorage.getItem("customerName"); // 1st
-var customerAttitude = localStorage.getItem("customerStyle"); // 2nd
+var customerAttitude = localStorage.getItem("customerAttitude"); // 2nd
 var customerHistory = localStorage.getItem("customerHistory"); // 3rd
 var customerFrequency = localStorage.getItem("customerFrequency"); // 4th
 var customerGender = localStorage.getItem("customerGender"); // 5th
@@ -37,6 +37,54 @@ var customerEnergy = localStorage.getItem("customerEnergy"); // 11th
 var customerRecovery = localStorage.getItem("customerRecovery"); // 12th
 var customerDiet = localStorage.getItem("customerDiet"); // 13th
 var customerEmail = localStorage.getItem("customerEmail"); // 14th
+
+// add all attributes to firebase
+/////////////////////////////////////////////////////////////
+
+var key = localStorage.getItem("uniqueKey");
+
+var config = {
+  apiKey: "AIzaSyDV2A0nsbVX_bPyGpjH9tn4lYkWnYtqk_k",
+  authDomain: "zupp-7c197.firebaseapp.com",
+  databaseURL: "https://zupp-7c197.firebaseio.com",
+  projectId: "zupp-7c197",
+  storageBucket: "",
+  messagingSenderId: "558183275118"
+};
+
+var defaultApp = firebase.initializeApp(config);
+console.log(defaultApp.name);
+var defaultDatabase = defaultApp.database();
+var reference = defaultDatabase.ref().child('users/' + key);
+
+var data = {
+  name: customerName,
+  attitude: customerAttitude,
+  history: customerHistory,
+  frequency: customerFrequency,
+  gender: customerGender,
+  age: customerAge,
+  current_state: customerCurrentState,
+  experience: customerExperience,
+  general_health: customerGoal_1,
+  fat_loss: customerGoal_2,
+  gain_mass: customerGoal_3,
+  athletic_performance: customerGoal_4,
+  strength: customerGoal_5,
+  vitamins: customerVitamins,
+  mass: customerGainMass,
+  sport_style: customerSportStyle,
+  sleep: customerSleep,
+  energy: customerEnergy,
+  recovery: customerRecovery,
+  diet: customerDiet,
+  email: customerEmail
+};
+
+reference.set(data);
+
+/////////////////////////////////////////////////////////////
+
 
 var newCustomer = new Customer(customerGender, customerGoal_1, customerGoal_2, customerGoal_3, customerGoal_4, customerGoal_5,
                                customerEnergy, customerRecovery, customerGainMass); // add parameters

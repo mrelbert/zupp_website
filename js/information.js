@@ -459,13 +459,13 @@ var addNotSure = function(){
 
 // functions for diet.html
 
-var addNotVeganOrVegetarian = function(){
+var addVeganOrVegetarian = function(){
   var customerDiet = "vegan_or_vegetarian";
   localStorage.setItem("customerDiet", customerDiet);
   window.location.href = "email.html";
 }
 
-var addVeganOrVegetarian = function(){
+var addNotVeganOrVegetarian = function(){
   var customerDiet = "not_vegan_or_vegetarian";
   localStorage.setItem("customerDiet", customerDiet);
   window.location.href = "email.html";
