@@ -479,7 +479,7 @@ var addEmail = function(){
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(customerEmail)){
     localStorage.setItem("customerEmail", customerEmail);
     event.preventDefault();
-    window.location.href = "result.html";
+    window.location.href = "render.html";
  } else {
    alert("You have entered an invalid email address!");
  }

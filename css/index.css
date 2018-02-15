@@ -1,5 +1,6 @@
 .container{
   position: relative;
+  height: 600px;
 }
 
 .background {
@@ -326,4 +327,15 @@
   font-family: 'Oswald', sans-serif;
   font-size: 1.3em;
   color: #FEC12E;
+}
+
+.progress {
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.force-to-bottom {
+  position: absolute;
+  bottom: 5%;
+  width: 95%;
 }
