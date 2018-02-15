@@ -143,7 +143,7 @@ var fishOil = function(){
   pic_container.className = "frame";
   var image2 = document.createElement("IMG");
   image2.className = "banner2";
-  image2.setAttribute("src", "../img/mountains.jpg");
+  image2.setAttribute("src", "../img/careof.jpg");
   pic_container.appendChild(image2);
 
   var div2 = document.createElement("div");
@@ -255,18 +255,17 @@ var multiVitamin = function(){
   text1_1.innerText = "You told us you were focusing on general health";
   var text1_2 = document.createElement("p");
   text1_2.className = "reasoning";
-  text1_2.innerText = "Multivitamin is one of the most widely researched supplements out there, and for good reason! There are many benefits associated with fish oil, and it’s incredibly useful for the general population and can help everyone from athletes to sedentary individuals.";
-
+  text1_2.innerText = "The body requires essential vitamins and minerals to function, but most people don't perfectly meet the daily amounts of each recommended by the USDA. Taking a multivitamin is one way to help ensure that you are meeting those goals.";
 
   var pic_container = document.createElement("div");
-  pic_container.className = "frame";
-  var image2 = document.createElement("IMG");
-  image2.className = "banner2";
-  image2.setAttribute("src", "../img/mountains.jpg");
-  pic_container.appendChild(image2);
+  pic_container.className = "multiVitamin_frame row";
+  // var image2 = document.createElement("IMG");
+  // image2.className = "banner2";
+  // image2.setAttribute("src", "../img/careof.jpg");
+  // pic_container.appendChild(image2);
 
   var div2 = document.createElement("div");
-  div2.className = "frame_content";
+  div2.className = "col fontWhite";
   var text2_1 = document.createElement("p");
   text2_1.className = "statements";
   text2_1.innerText = "Fish oil supports your overall health";
@@ -274,43 +273,46 @@ var multiVitamin = function(){
   text2_2.className = "reasoning";
   text2_2.innerText = "Fish oil contains EPA and DHA, which are omega-3 fatty acids that have many benefits supported by repeated double-blind clinical trials. These are termed “essential fatty acids” (EFA’s) because we need them for proper function, but our bodies cannot produce them. Thus, we must obtain them through food or supplements.";
 
+  var divA = document.createElement("div");
+  divA.className = "col fontWhite";
+  var textA_1 = document.createElement("p");
+  textA_1.className = "statements";
+  textA_1.innerText = "Fish oil supports your overall health";
+  var textA_2 = document.createElement("p");
+  textA_2.className = "reasoning";
+  textA_2.innerText = "Fish oil contains EPA and DHA, which are omega-3 fatty acids that have many benefits supported by repeated double-blind clinical trials. These are termed “essential fatty acids” (EFA’s) because we need them for proper function, but our bodies cannot produce them. Thus, we must obtain them through food or supplements.";
+
+
   div1.appendChild(text1_1);
   div1.appendChild(text1_2);
   div2.appendChild(text2_1);
   div2.appendChild(text2_2);
+
+  divA.appendChild(textA_1);
+  divA.appendChild(textA_2);
+
   information.appendChild(div1);
   pic_container.appendChild(div2);
+
+  pic_container.appendChild(divA);
+
   information.appendChild(pic_container);
-
-  // dummy text
-  var div3 = document.createElement("div");
-  div3.className = "compartment";
-  var dummy_statement = document.createElement("p");
-  dummy_statement.className = "statements";
-  dummy_statement.innerText = "Important when not eating enough fish";
-  var dummy_reasoning = document.createElement("p");
-  dummy_reasoning.className = "reasoning";
-  dummy_reasoning.innerText = "The American Heart Association recommends people eat two servings of fish per week due to its beneficial omega-3 fatty acids. If you don’t often eat fish, supplementation may be beneficial to you. While there are a number of EFA supplements, such as flax and other oils, fish oil is one of the finest sources available.";
-
-  div3.appendChild(dummy_statement);
-  div3.appendChild(dummy_reasoning);
-  information.appendChild(div3);
 
   var div4 = document.createElement("div");
   div4.className = "compartment";
   var dummy_statement2 = document.createElement("p");
   dummy_statement2.className = "statements";
-  dummy_statement2.innerText = "Fish oil and muscle growth";
+  dummy_statement2.innerText = "Benefits of a multivitamin";
   var dummy_reasoning2 = document.createElement("p");
   dummy_reasoning2.className = "reasoning";
-  dummy_reasoning2.innerText = "Perhaps more interesting for people looking to build muscle, EPA and DHA supplementation has been suggested to support muscle protein synthesis and limit muscle protein degradation. This can mean less muscle breakdown and more muscle growth.";
+  dummy_reasoning2.innerText = "As mentioned previously, the human body must be given a wide and complex variety of vital nutrients to complete all the tasks it has in a normal day. Becoming deficient in any one of these essential vitamins or minerals causes breakdown of the metabolic pathway that produces optimum efficiency and performance can go down rapidly.";
   var br = document.createElement("br");
 
   // for the second paragraph
   var div4_1 = document.createElement("div");
   var dummy_reasoning3 = document.createElement("p");
   dummy_reasoning3.className = "reasoning";
-  dummy_reasoning3.innerText = "Perhaps more interesting for people looking to build muscle, EPA and DHA supplementation has been suggested to support muscle protein synthesis and limit muscle protein degradation. This can mean less muscle breakdown and more muscle growth.";
+  dummy_reasoning3.innerText = "Bodybuilders, athletes, and people that lead active lifestyles need even more nutrients than the average non-active person. This is why it is widely accepted that a proper multivitamin is the foundation of a great supplement strategy and should be the first thing you take care of. Without the proper amounts of vitamins and minerals in your body (whether through your diet or through a multivitamin), other supplements will not be as effective.";
   div4_1.appendChild(dummy_reasoning3);
 
   div4.appendChild(dummy_statement2);

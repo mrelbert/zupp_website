@@ -230,8 +230,7 @@ for(var key in goal_object){
     }
   } else if(key == "Multivitamin"){
     absolute_url.onclick = function(event){
-      var information = document.getElementById("information");
-      information.innerText = "MULTIVITAMIN INFO";
+      multiVitamin();
     }
   } else if(key == "Fish oil"){
     absolute_url.onclick = function(event){

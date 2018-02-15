@@ -73,6 +73,15 @@
   position: relative;
 }
 
+.multiVitamin_frame{
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/careof.jpg');
+}
+
+.fontWhite {
+  color: white;
+}
+
 .frame_content {
   position: absolute;
   top: 50%;
@@ -83,8 +92,6 @@
 .frame_content p {
   color: white;
 }
-
-.frame_content
 
 .wrapper{
   padding-top: 20px;
