@@ -9,6 +9,7 @@
 
 .greeting {
   font-family: 'Oswald', sans-serif;
+  height: 300px;
   color: #FEC12E;
   text-align: center;
   position: relative;
@@ -338,4 +339,14 @@
   position: absolute;
   bottom: 5%;
   width: 95%;
+}
+
+.progress-bar-zupp {
+  background-color: #FEC12E !important;
+}
+
+.progress-bar-zupp-background{
+  background-color: #1A1A1A !important;
+  border: 1px solid #FEC12E !important;
+  height: 100%;
 }

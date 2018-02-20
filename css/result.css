@@ -10,6 +10,10 @@
   margin-top: 20px;
 }
 
+.col {
+  padding: 0;
+}
+
 .url{
   color: inherit;
   /* text-decoration: none; */
@@ -76,6 +80,86 @@
 .multiVitamin_frame{
   position: relative;
   background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/careof.jpg');
+  background-size: auto 100%;
+  height: 25%;
+}
+
+.greenTeaExtract_frame{
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/careof.jpg');
+  background-size: auto 100%;
+  height: 25%;
+}
+
+.smallImage{
+  background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/vitamin_1.jpg');
+  background-size: 80px 80px;
+  background-repeat: no-repeat;
+  margin-top: 45px;
+}
+
+.smallText{
+  font-size: 12px;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.preWorkout_frame{
+  position: relative;
+  /* background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/careof.jpg');
+  background-size: auto 100%;
+  height: 35%; */
+}
+
+.carnitine_frame{
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/careof.jpg');
+  background-size: auto 100%;
+}
+
+.carnitine_list{
+  width: 65%;
+  margin: 0 auto;
+}
+
+.carnitine_title{
+  padding-top: 15px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: white;
+}
+
+.greenTeaExtract_title{
+  padding-top: 15px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
+  color: white;
+}
+
+.greenTeaExtract_reasoning{
+  padding-top: 28px;
+  width: 72%;
+  margin: 0 auto;
+  color: white;
+}
+
+
+.carnitine_item{
+  color: white;
+}
+
+.multiVitamin{
+  color: white;
+  font-size: 1.5em;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .fontWhite {
@@ -109,8 +193,29 @@
   font-weight: bold;
 }
 
+.multiVitamin_statements{
+  text-align: center;
+  font-size: 1.2em;
+}
+
 .reasoning{
   width: 80%;
+}
+
+.wheyProteinReasoning{
+  width: 82%;
+}
+
+.wheyCompartment{
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 36px;
+}
+
+.multiVitamin_reasoning{
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #sign-in{

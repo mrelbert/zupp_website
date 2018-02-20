@@ -96,7 +96,7 @@ var general_object = {
 
 var fat_object = {
   "Carnitine": "../img/vitamin_1.jpg",
-  "Caffeine": "../img/vitamin_2.jpg",
+  "Green tea extract": "../img/vitamin_2.jpg",
   "Glutamine": "../img/vitamin_3.jpg"
 };
 
@@ -110,7 +110,7 @@ var mass_object = {
 
 var athletic_object = {
   "Whey Protein": "../img/vitamin_1.jpg",
-  "B-vitamins": "../img/vitamin_2.jpg",
+  // "B-vitamins": "../img/vitamin_2.jpg",
   "Pre-workout": "../img/vitamin_3.jpg",
   "Glutamine": "../img/vitamin_4.jpg",
   "BCAA": "../img/vitamin_4.jpg"
@@ -211,17 +211,13 @@ for(var key in goal_object){
   bullet_points.appendChild(absolute_url);
 
   if(key == "Carnitine"){
-    absolute_url.onclick = function(event){
-      first_show(); // from result_aid.js
-    }
-  } else if(key == "Caffeine"){
+      absolute_url.onclick = function(event){
+        carnitine();
+      }
+  } else if(key == "Green tea extract"){
     absolute_url.onclick = function(event){
       var information = document.getElementById("information");
-      if(newCustomer.energy == "energy_not_needed"){
-        information.innerText = "GREEN TEA EXTRACT INFO";
-      } else {
-        information.innerText = "CAFFEINE INFO";
-      }
+      greenTeaExtract();
     }
   } else if(key == "Glutamine"){
     absolute_url.onclick = function(event){
@@ -244,15 +240,14 @@ for(var key in goal_object){
     absolute_url.onclick = function(event){
       var information = document.getElementById("information");
       if(newCustomer.mass == "pack_size_fast"){
-        information.innerText = "MASS GAINER INFO";
+        wheyProtein();
       } else {
-        information.innerText = "WHEY PROTEIN INFO";
+        wheyProtein();
       }
     }
   } else if(key == "Pre-workout"){
     absolute_url.onclick = function(event){
-      var information = document.getElementById("information");
-      information.innerText = "PRE-WORKOUT INFO";
+      preWorkout();
     }
   } else if(key == "BCAA"){
     absolute_url.onclick = function(event){
