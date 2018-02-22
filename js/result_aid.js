@@ -1,98 +1,3 @@
-var first_show = function(){
-  information.innerText = "";
-  var image = document.createElement("IMG");
-  image.className = "banner";
-  image.setAttribute("src", "../img/banner.png");
-  information.appendChild(image);
-  var wrapper = document.createElement("div");
-  wrapper.className = "wrapper";
-  var div1 = document.createElement("div");
-  div1.className = "compartment";
-  var text1_1 = document.createElement("p");
-  text1_1.className = "statements";
-  text1_1.innerText = "You live above 37 latitude";
-  var text1_2 = document.createElement("p");
-  text1_2.className = "reasoning";
-  text1_2.innerText = "It's hard to get the vitamin D you need from sun exposure alone if you live in the northern half of the U.S., based on weather and cloud cover patterns.";
-  var div2 = document.createElement("div");
-  div2.className = "compartment";
-  var text2_1 = document.createElement("p");
-  text2_1.className = "statements";
-  text2_1.innerText = "Vitamin D supports healthier bones";
-  var text2_2 = document.createElement("p");
-  text2_2.className = "reasoning";
-  text2_2.innerText = "Getting enough Vitamin D is essential to overall health and maintaining healthy bones. A recent study done in 2011 showed that over 70% of Americans are not getting enough Vitamin D.";
-  div1.appendChild(text1_1);
-  div1.appendChild(text1_2);
-  div2.appendChild(text2_1);
-  div2.appendChild(text2_2);
-  wrapper.appendChild(div1);
-  wrapper.appendChild(div2);
-
-  // dummy text
-  var div3 = document.createElement("div");
-  div3.className = "compartment";
-  var dummy_statement = document.createElement("p");
-  dummy_statement.className = "statements";
-  dummy_statement.innerText = "Lorem Ipsum";
-  var dummy_reasoning = document.createElement("p");
-  dummy_reasoning.className = "reasoning";
-  dummy_reasoning.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  div3.appendChild(dummy_statement);
-  div3.appendChild(dummy_reasoning);
-  wrapper.appendChild(div3);
-
-  var div4 = document.createElement("div");
-  div4.className = "compartment";
-  var dummy_statement2 = document.createElement("p");
-  dummy_statement2.className = "statements";
-  dummy_statement2.innerText = "Lorem Ipsum";
-  var dummy_reasoning2 = document.createElement("p");
-  dummy_reasoning2.className = "reasoning";
-  dummy_reasoning2.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  div4.appendChild(dummy_statement2);
-  div4.appendChild(dummy_reasoning2);
-  wrapper.appendChild(div4);
-
-  var div5 = document.createElement("div");
-  div5.className = "compartment";
-  var dummy_statement3 = document.createElement("p");
-  dummy_statement3.className = "statements";
-  dummy_statement3.innerText = "Lorem Ipsum";
-  var dummy_reasoning3 = document.createElement("p");
-  dummy_reasoning3.className = "reasoning";
-  dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  div5.appendChild(dummy_statement3);
-  div5.appendChild(dummy_reasoning3);
-  wrapper.appendChild(div5);
-
-  var div6 = document.createElement("div");
-  div6.className = "compartment";
-  var dummy_statement4 = document.createElement("p");
-  dummy_statement4.className = "statements";
-  dummy_statement4.innerText = "Lorem Ipsum";
-  var dummy_reasoning4 = document.createElement("p");
-  dummy_reasoning4.className = "reasoning";
-  dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  div6.appendChild(dummy_statement4);
-  div6.appendChild(dummy_reasoning4);
-  wrapper.appendChild(div6);
-
-  var div7 = document.createElement("div");
-  div7.className = "compartment";
-  var dummy_statement5 = document.createElement("p");
-  dummy_statement5.className = "statements";
-  dummy_statement5.innerText = "Lorem Ipsum";
-  var dummy_reasoning5 = document.createElement("p");
-  dummy_reasoning5.className = "reasoning";
-  dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  div7.appendChild(dummy_statement4);
-  div7.appendChild(dummy_reasoning4);
-  wrapper.appendChild(div7);
-
-  information.appendChild(wrapper);
-}
-
 var setUp = function(){
   var recommendation_box = document.getElementById("recommendations");
   var recommendations_length = Object.keys(goal_object).length;
@@ -199,44 +104,9 @@ var fishOil = function(){
   information.appendChild(div4);
   information.appendChild(br);
   div4.appendChild(div4_1);
-  //
-  // var div5 = document.createElement("div");
-  // div5.className = "compartment";
-  // var dummy_statement3 = document.createElement("p");
-  // dummy_statement3.className = "statements";
-  // dummy_statement3.innerText = "Lorem Ipsum";
-  // var dummy_reasoning3 = document.createElement("p");
-  // dummy_reasoning3.className = "reasoning";
-  // dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div5.appendChild(dummy_statement3);
-  // div5.appendChild(dummy_reasoning3);
-  // wrapper.appendChild(div5);
-  //
-  // var div6 = document.createElement("div");
-  // div6.className = "compartment";
-  // var dummy_statement4 = document.createElement("p");
-  // dummy_statement4.className = "statements";
-  // dummy_statement4.innerText = "Lorem Ipsum";
-  // var dummy_reasoning4 = document.createElement("p");
-  // dummy_reasoning4.className = "reasoning";
-  // dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div6.appendChild(dummy_statement4);
-  // div6.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div6);
-  //
-  // var div7 = document.createElement("div");
-  // div7.className = "compartment";
-  // var dummy_statement5 = document.createElement("p");
-  // dummy_statement5.className = "statements";
-  // dummy_statement5.innerText = "Lorem Ipsum";
-  // var dummy_reasoning5 = document.createElement("p");
-  // dummy_reasoning5.className = "reasoning";
-  // dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div7.appendChild(dummy_statement4);
-  // div7.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div7);
-  //
-  // information.appendChild(wrapper);
+
+  var fishOil_information = document.getElementById("information");
+  fishOil_information.style.height = "218%";
 }
 
 var multiVitamin = function(){
@@ -259,10 +129,7 @@ var multiVitamin = function(){
 
   var pic_container = document.createElement("div");
   pic_container.className = "multiVitamin_frame row";
-  // var image2 = document.createElement("IMG");
-  // image2.className = "banner2";
-  // image2.setAttribute("src", "../img/careof.jpg");
-  // pic_container.appendChild(image2);
+
   var row1 = document.createElement("div");
   var row2 = document.createElement("div");
   row1.className = "row";
@@ -331,44 +198,10 @@ var multiVitamin = function(){
   information.appendChild(div4);
   information.appendChild(br);
   div4.appendChild(div4_1);
-  //
-  // var div5 = document.createElement("div");
-  // div5.className = "compartment";
-  // var dummy_statement3 = document.createElement("p");
-  // dummy_statement3.className = "statements";
-  // dummy_statement3.innerText = "Lorem Ipsum";
-  // var dummy_reasoning3 = document.createElement("p");
-  // dummy_reasoning3.className = "reasoning";
-  // dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div5.appendChild(dummy_statement3);
-  // div5.appendChild(dummy_reasoning3);
-  // wrapper.appendChild(div5);
-  //
-  // var div6 = document.createElement("div");
-  // div6.className = "compartment";
-  // var dummy_statement4 = document.createElement("p");
-  // dummy_statement4.className = "statements";
-  // dummy_statement4.innerText = "Lorem Ipsum";
-  // var dummy_reasoning4 = document.createElement("p");
-  // dummy_reasoning4.className = "reasoning";
-  // dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div6.appendChild(dummy_statement4);
-  // div6.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div6);
-  //
-  // var div7 = document.createElement("div");
-  // div7.className = "compartment";
-  // var dummy_statement5 = document.createElement("p");
-  // dummy_statement5.className = "statements";
-  // dummy_statement5.innerText = "Lorem Ipsum";
-  // var dummy_reasoning5 = document.createElement("p");
-  // dummy_reasoning5.className = "reasoning";
-  // dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div7.appendChild(dummy_statement4);
-  // div7.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div7);
-  //
-  // information.appendChild(wrapper);
+
+  var multiVitamin_information = document.getElementById("information");
+  multiVitamin_information.style.height = "210%";
+
 }
 
 var carnitine = function(){
@@ -408,13 +241,6 @@ var carnitine = function(){
   pic_container.className = "carnitine_frame row";
 
   var div2 = document.createElement("div");
-  // div2.className = "frame_content";
-  // var text2_1 = document.createElement("p");
-  // text2_1.className = "statements";
-  // text2_1.innerText = "Fish oil supports your overall health";
-  // var text2_2 = document.createElement("p");
-  // text2_2.className = "reasoning";
-  // text2_2.innerText = "Fish oil contains EPA and DHA, which are omega-3 fatty acids that have many benefits supported by repeated double-blind clinical trials. These are termed “essential fatty acids” (EFA’s) because we need them for proper function, but our bodies cannot produce them. Thus, we must obtain them through food or supplements.";
   div2.className = "carnitine_frame";
   var title = document.createElement("p");
   title.className = "carnitine_title";
@@ -467,44 +293,8 @@ var carnitine = function(){
   div3.appendChild(dummy_reasoning);
   information.appendChild(div3);
 
-  //
-  // var div5 = document.createElement("div");
-  // div5.className = "compartment";
-  // var dummy_statement3 = document.createElement("p");
-  // dummy_statement3.className = "statements";
-  // dummy_statement3.innerText = "Lorem Ipsum";
-  // var dummy_reasoning3 = document.createElement("p");
-  // dummy_reasoning3.className = "reasoning";
-  // dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div5.appendChild(dummy_statement3);
-  // div5.appendChild(dummy_reasoning3);
-  // wrapper.appendChild(div5);
-  //
-  // var div6 = document.createElement("div");
-  // div6.className = "compartment";
-  // var dummy_statement4 = document.createElement("p");
-  // dummy_statement4.className = "statements";
-  // dummy_statement4.innerText = "Lorem Ipsum";
-  // var dummy_reasoning4 = document.createElement("p");
-  // dummy_reasoning4.className = "reasoning";
-  // dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div6.appendChild(dummy_statement4);
-  // div6.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div6);
-  //
-  // var div7 = document.createElement("div");
-  // div7.className = "compartment";
-  // var dummy_statement5 = document.createElement("p");
-  // dummy_statement5.className = "statements";
-  // dummy_statement5.innerText = "Lorem Ipsum";
-  // var dummy_reasoning5 = document.createElement("p");
-  // dummy_reasoning5.className = "reasoning";
-  // dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div7.appendChild(dummy_statement4);
-  // div7.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div7);
-  //
-  // information.appendChild(wrapper);
+  var carnitine_information = document.getElementById("information");
+  carnitine_information.style.height = "240%";
 }
 
 var greenTeaExtract = function(){
@@ -563,47 +353,12 @@ var greenTeaExtract = function(){
   div3.appendChild(dummy_reasoning);
   information.appendChild(div3);
 
-  //
-  // var div5 = document.createElement("div");
-  // div5.className = "compartment";
-  // var dummy_statement3 = document.createElement("p");
-  // dummy_statement3.className = "statements";
-  // dummy_statement3.innerText = "Lorem Ipsum";
-  // var dummy_reasoning3 = document.createElement("p");
-  // dummy_reasoning3.className = "reasoning";
-  // dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div5.appendChild(dummy_statement3);
-  // div5.appendChild(dummy_reasoning3);
-  // wrapper.appendChild(div5);
-  //
-  // var div6 = document.createElement("div");
-  // div6.className = "compartment";
-  // var dummy_statement4 = document.createElement("p");
-  // dummy_statement4.className = "statements";
-  // dummy_statement4.innerText = "Lorem Ipsum";
-  // var dummy_reasoning4 = document.createElement("p");
-  // dummy_reasoning4.className = "reasoning";
-  // dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div6.appendChild(dummy_statement4);
-  // div6.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div6);
-  //
-  // var div7 = document.createElement("div");
-  // div7.className = "compartment";
-  // var dummy_statement5 = document.createElement("p");
-  // dummy_statement5.className = "statements";
-  // dummy_statement5.innerText = "Lorem Ipsum";
-  // var dummy_reasoning5 = document.createElement("p");
-  // dummy_reasoning5.className = "reasoning";
-  // dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div7.appendChild(dummy_statement4);
-  // div7.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div7);
-  //
-  // information.appendChild(wrapper);
+  var greenTea_information = document.getElementById("information");
+  greenTea_information.style.height = "200%";
 }
 
 var glutamine = function(){
+  // banner
   information.innerText = "";
   var image = document.createElement("IMG");
   image.className = "banner";
@@ -612,114 +367,143 @@ var glutamine = function(){
   var wrapper = document.createElement("div");
   wrapper.className = "wrapper";
 
+  // first div
   var div1 = document.createElement("div");
   div1.className = "compartment";
   var text1_1 = document.createElement("p");
   text1_1.className = "statements";
-  text1_1.innerText = "You told us you were focusing on general health";
+  text1_1.innerText = "The most common amino acid found in your muscles";
   var text1_2 = document.createElement("p");
   text1_2.className = "reasoning";
-  text1_2.innerText = "Glutamine is one of the most widely researched supplements out there, and for good reason! There are many benefits associated with fish oil, and it’s incredibly useful for the general population and can help everyone from athletes to sedentary individuals.";
-
-
-  var pic_container = document.createElement("div");
-  pic_container.className = "frame";
-  var image2 = document.createElement("IMG");
-  image2.className = "banner2";
-  image2.setAttribute("src", "../img/mountains.jpg");
-  pic_container.appendChild(image2);
-
-  var div2 = document.createElement("div");
-  div2.className = "frame_content";
-  var text2_1 = document.createElement("p");
-  text2_1.className = "statements";
-  text2_1.innerText = "Fish oil supports your overall health";
-  var text2_2 = document.createElement("p");
-  text2_2.className = "reasoning";
-  text2_2.innerText = "Fish oil contains EPA and DHA, which are omega-3 fatty acids that have many benefits supported by repeated double-blind clinical trials. These are termed “essential fatty acids” (EFA’s) because we need them for proper function, but our bodies cannot produce them. Thus, we must obtain them through food or supplements.";
+  text1_2.innerText = "That’s right - Glutamine is the most common amino acid found in your muscles. Over 61% of skeletal muscle is Glutamine! Glutamine consists of 19% nitrogen, making it the primary transporter of nitrogen into your muscle cells. During intense training, Glutamine levels are greatly depleted in your body, which decreases strength, stamina and recovery. It could take up to 6 days for Glutamine levels to return to normal - and Glutamine plays a key role in protein synthesis. Studies have shown that L-Glutamine supplementation can minimize breakdown of muscle and improve protein metabolism.";
 
   div1.appendChild(text1_1);
   div1.appendChild(text1_2);
-  div2.appendChild(text2_1);
-  div2.appendChild(text2_2);
   information.appendChild(div1);
+
+  // picture container
+  var pic_container = document.createElement("div");
+  pic_container.className = "preWorkout_frame row";
+
+  var div2 = document.createElement("div");
+  // div2.className = "frame_content";
+  var row1 = document.createElement("div");
+  row1.className = "row";
+  row1.id = "row1"
+  var row2 = document.createElement("div");
+  row2.className = "row";
+
+  // COLUMN 1
+  var column_1 = document.createElement("div");
+  column_1.className = "col-md-6";
+
+  var col1_in_column_1 = document.createElement("div");
+  col1_in_column_1.className = "col-md-4 smallImage";
+  // col1_in_column_1.innerText = "COL MD 4COL MD 4COL MD 4COL MD 4COL MD 4COL MD 4";
+
+  var col2_in_column_1 = document.createElement("div");
+  col2_in_column_1.className = "col-md-8";
+  var protein_synthesis = document.createElement("p");
+  protein_synthesis.innerText = "Protein synthesis";
+  var protein_synthesis_br = document.createElement("br");
+  var protein_synthesis_info = document.createElement("p");
+  protein_synthesis_info.innerText = "Glutamine has been linked to protein synthesis. It prevents your muscle from being catabolized (eaten up) in order to provide Glutamine for other cells in the body.";
+  protein_synthesis_info.className = "smallText";
+  col2_in_column_1.appendChild(protein_synthesis);
+  col2_in_column_1.appendChild(protein_synthesis_info);
+
+  var protein_synthesis_row_in_column_1 = document.createElement("div");
+  protein_synthesis_row_in_column_1.className = "row";
+  protein_synthesis_row_in_column_1.appendChild(col1_in_column_1);
+  protein_synthesis_row_in_column_1.appendChild(col2_in_column_1);
+  column_1.appendChild(protein_synthesis_row_in_column_1);
+
+  // COLUMN 2
+  var column_2 = document.createElement("div");
+  column_2.className = "col-md-6";
+
+  var col1_in_column_2 = document.createElement("div");
+  col1_in_column_2.className = "col-md-4 smallImage";
+
+  var col2_in_column_2 = document.createElement("div");
+  col2_in_column_2.className = "col-md-8";
+  var beta_alanine = document.createElement("p");
+  beta_alanine.innerText = "Replenishing Glutamine levels";
+  var beta_alanine_br = document.createElement("br");
+  var beta_alanine_info = document.createElement("p");
+  beta_alanine_info.innerText = "Glutamine benefits you by replenishing declining Glutamine levels during intense workouts. This prevents the breakdown of your muscles.";
+  beta_alanine_info.className = "smallText";
+  col2_in_column_2.appendChild(beta_alanine);
+  col2_in_column_2.appendChild(beta_alanine_info);
+
+  var beta_alanine_row_in_column_1 = document.createElement("div");
+  beta_alanine_row_in_column_1.className = "row";
+  beta_alanine_row_in_column_1.appendChild(col1_in_column_2);
+  beta_alanine_row_in_column_1.appendChild(col2_in_column_2);
+  column_2.appendChild(beta_alanine_row_in_column_1);
+
+  row1.appendChild(column_1);
+  row1.appendChild(column_2);
+
+  // COLUMN 3
+  var column_3 = document.createElement("div");
+  column_3.className = "col-md-6";
+
+  var col1_in_column_3 = document.createElement("div");
+  col1_in_column_3.className = "col-md-4 smallImage";
+
+  var col2_in_column_3 = document.createElement("div");
+  col2_in_column_3.className = "col-md-8";
+  var creatine_monohydrate = document.createElement("p");
+  creatine_monohydrate.innerText = "Immunity";
+  var creatine_monohydrate_br = document.createElement("br");
+  var creatine_monohydrate_info = document.createElement("p");
+  creatine_monohydrate_info.innerText = "Glutamine may serve to boost your immune system. For bodybuilders, athletes, or lifters, this is important since heavy workouts tend to greatly deplete Glutamine levels, which are a primary energy source for your immune system.";
+  creatine_monohydrate_info.className = "smallText";
+  col2_in_column_3.appendChild(creatine_monohydrate);
+  col2_in_column_3.appendChild(creatine_monohydrate_info);
+
+  var creatine_monohydrate_row_in_column_3 = document.createElement("div");
+  creatine_monohydrate_row_in_column_3.className = "row";
+  creatine_monohydrate_row_in_column_3.appendChild(col1_in_column_3);
+  creatine_monohydrate_row_in_column_3.appendChild(col2_in_column_3);
+  column_3.appendChild(creatine_monohydrate_row_in_column_3);
+
+  // COLUMN 4
+  var column_4 = document.createElement("div");
+  column_4.className = "col-md-6";
+
+  var col1_in_column_4 = document.createElement("div");
+  col1_in_column_4.className = "col-md-4 smallImage";
+
+  var col2_in_column_4 = document.createElement("div");
+  col2_in_column_4.className = "col-md-8";
+  var citrulline_malate = document.createElement("p");
+  citrulline_malate.innerText = "Intestinal Health";
+  var citrulline_malate_br = document.createElement("br");
+  var citrulline_malate_info = document.createElement("p");
+  citrulline_malate_info.innerText = "Your intestines are a major part of your immune system. Glutamine is an energy source for intestinal and immune cells. It also helps maintain the barrier between the intestines and the rest of your body and aids with proper growth of intestinal cells.";
+  citrulline_malate_info.className = "smallText";
+  col2_in_column_4.appendChild(citrulline_malate);
+  col2_in_column_4.appendChild(citrulline_malate_info);
+
+  var citrulline_malate_row_in_column_4 = document.createElement("div");
+  citrulline_malate_row_in_column_4.className = "row";
+  citrulline_malate_row_in_column_4.appendChild(col1_in_column_4);
+  citrulline_malate_row_in_column_4.appendChild(col2_in_column_4);
+  column_4.appendChild(citrulline_malate_row_in_column_4);
+
+  row2.appendChild(column_3);
+  row2.appendChild(column_4);
+
+  div2.appendChild(row1);
+  div2.appendChild(row2);
   pic_container.appendChild(div2);
+
   information.appendChild(pic_container);
 
-  // dummy text
-  var div3 = document.createElement("div");
-  div3.className = "compartment";
-  var dummy_statement = document.createElement("p");
-  dummy_statement.className = "statements";
-  dummy_statement.innerText = "Important when not eating enough fish";
-  var dummy_reasoning = document.createElement("p");
-  dummy_reasoning.className = "reasoning";
-  dummy_reasoning.innerText = "The American Heart Association recommends people eat two servings of fish per week due to its beneficial omega-3 fatty acids. If you don’t often eat fish, supplementation may be beneficial to you. While there are a number of EFA supplements, such as flax and other oils, fish oil is one of the finest sources available.";
-
-  div3.appendChild(dummy_statement);
-  div3.appendChild(dummy_reasoning);
-  information.appendChild(div3);
-
-  var div4 = document.createElement("div");
-  div4.className = "compartment";
-  var dummy_statement2 = document.createElement("p");
-  dummy_statement2.className = "statements";
-  dummy_statement2.innerText = "Fish oil and muscle growth";
-  var dummy_reasoning2 = document.createElement("p");
-  dummy_reasoning2.className = "reasoning";
-  dummy_reasoning2.innerText = "Perhaps more interesting for people looking to build muscle, EPA and DHA supplementation has been suggested to support muscle protein synthesis and limit muscle protein degradation. This can mean less muscle breakdown and more muscle growth.";
-  var br = document.createElement("br");
-
-  // for the second paragraph
-  var div4_1 = document.createElement("div");
-  var dummy_reasoning3 = document.createElement("p");
-  dummy_reasoning3.className = "reasoning";
-  dummy_reasoning3.innerText = "Perhaps more interesting for people looking to build muscle, EPA and DHA supplementation has been suggested to support muscle protein synthesis and limit muscle protein degradation. This can mean less muscle breakdown and more muscle growth.";
-  div4_1.appendChild(dummy_reasoning3);
-
-  div4.appendChild(dummy_statement2);
-  div4.appendChild(dummy_reasoning2);
-  information.appendChild(div4);
-  information.appendChild(br);
-  div4.appendChild(div4_1);
-  //
-  // var div5 = document.createElement("div");
-  // div5.className = "compartment";
-  // var dummy_statement3 = document.createElement("p");
-  // dummy_statement3.className = "statements";
-  // dummy_statement3.innerText = "Lorem Ipsum";
-  // var dummy_reasoning3 = document.createElement("p");
-  // dummy_reasoning3.className = "reasoning";
-  // dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div5.appendChild(dummy_statement3);
-  // div5.appendChild(dummy_reasoning3);
-  // wrapper.appendChild(div5);
-  //
-  // var div6 = document.createElement("div");
-  // div6.className = "compartment";
-  // var dummy_statement4 = document.createElement("p");
-  // dummy_statement4.className = "statements";
-  // dummy_statement4.innerText = "Lorem Ipsum";
-  // var dummy_reasoning4 = document.createElement("p");
-  // dummy_reasoning4.className = "reasoning";
-  // dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div6.appendChild(dummy_statement4);
-  // div6.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div6);
-  //
-  // var div7 = document.createElement("div");
-  // div7.className = "compartment";
-  // var dummy_statement5 = document.createElement("p");
-  // dummy_statement5.className = "statements";
-  // dummy_statement5.innerText = "Lorem Ipsum";
-  // var dummy_reasoning5 = document.createElement("p");
-  // dummy_reasoning5.className = "reasoning";
-  // dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div7.appendChild(dummy_statement4);
-  // div7.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div7);
-  //
-  // information.appendChild(wrapper);
+  var glutamine_information = document.getElementById("information");
+  glutamine_information.style.height = "150%";
 }
 
 var creatine = function(){
@@ -732,113 +516,102 @@ var creatine = function(){
   wrapper.className = "wrapper";
 
   var div1 = document.createElement("div");
-  div1.className = "compartment";
+  div1.className = "wheyCompartment";
   var text1_1 = document.createElement("p");
   text1_1.className = "statements";
-  text1_1.innerText = "You told us you were focusing on general health";
+  text1_1.innerText = "The benefits of creatine for muscle building";
   var text1_2 = document.createElement("p");
-  text1_2.className = "reasoning";
-  text1_2.innerText = "Creatine is one of the most widely researched supplements out there, and for good reason! There are many benefits associated with fish oil, and it’s incredibly useful for the general population and can help everyone from athletes to sedentary individuals.";
+  text1_2.className = "wheyProteinReasoning";
+  text1_2.innerText = "Creatine is one of the most heavily researched supplements on the market today, with over 200 studies in the past decade alone. It also has an outstanding safety profile, making it a beneficial and safe substance to use. Creatine is a substance that is found naturally in muscle cells. It helps your muscles produce energy during heavy lifting or high-intensity exercise. Taking creatine as a supplement is very popular among athletes and bodybuilders in order to gain muscle, enhance strength and improve exercise performance.";
 
+  var div1_A = document.createElement("div");
+  div1_A.className = "compartment";
+  var text1_1_A = document.createElement("p");
+  text1_1_A.className = "statements";
+  text1_1_A.innerText = "Some science behind creatine";
+  var text1_2_A = document.createElement("p");
+  text1_2_A.className = "reasoning";
+  text1_2_A.innerText = "About 95% of the body's creatine is stored in muscles, in the form of phosphocreatine. The other 5% are stored in the brain, kidneys and liver. When you supplement, you increase your stores of phosphocreatine. This is a form of stored energy in the cells, as it helps your body produce more of a high-energy molecule called ATP. ATP is often called the body's energy currency. When you have more ATP, your body can perform better during exercise.Creatine also alters several cellular processes that lead to increased muscle mass, strength and recovery.";
 
+  ////////////////////////////////////////
   var pic_container = document.createElement("div");
-  pic_container.className = "frame";
-  var image2 = document.createElement("IMG");
-  image2.className = "banner2";
-  image2.setAttribute("src", "../img/mountains.jpg");
-  pic_container.appendChild(image2);
+  pic_container.className = "creatine_frame row";
 
-  var div2 = document.createElement("div");
-  div2.className = "frame_content";
-  var text2_1 = document.createElement("p");
-  text2_1.className = "statements";
-  text2_1.innerText = "Fish oil supports your overall health";
-  var text2_2 = document.createElement("p");
-  text2_2.className = "reasoning";
-  text2_2.innerText = "Fish oil contains EPA and DHA, which are omega-3 fatty acids that have many benefits supported by repeated double-blind clinical trials. These are termed “essential fatty acids” (EFA’s) because we need them for proper function, but our bodies cannot produce them. Thus, we must obtain them through food or supplements.";
+  var row = document.createElement("div");
+  row.className = "row";
 
+  var col1 = document.createElement("div");
+  var col2 = document.createElement("div");
+  col1.className = "col-md-6";
+  col2.className = "col-md-6";
+
+  var array1 = ["<strong>Boost work load</strong>: It can enable more total work or volume in a single training session, which is a key factor in long-term muscle growth.",
+                "<strong>Improve cell signaling</strong>: Supplementation can increase satellite cell signaling, where signals to the muscles help with repair and new muscle growth.",
+                "<strong>Raise anabolic hormones</strong>: Studies have shown that there is a large rise in hormones, such as IGF-1, after supplementation.",
+                ];
+
+  var array2 = ["<strong>Increase cell hydration</strong>: It is well known for increasing the water content within muscle cells. This causes a cell volumization effect that may play a role in muscle growth.",
+                "<strong>Reduce protein breakdown</strong>: Supplementation may also help increase total muscle mass by reducing muscle breakdown.",
+                "<strong>Lower myostatin levels</strong>: Elevated levels of the protein myostatin are well known for slowing or totally inhibiting new muscle growth. Supplementing can reduce these levels, increasing growth potential."
+              ];
+
+  var list1 = document.createElement("ul");
+  list1.className = "creatine_list1";
+  for(var i = 0; i < array1.length; i++) {
+    // Create the list item:
+    var item1 = document.createElement('li');
+    item1.innerHTML = array1[i];
+    item1.className = "creatine_item";
+    // Set its contents:
+    // Add it to the list:
+    var br1 = document.createElement("br");
+    list1.appendChild(item1);
+    list1.appendChild(br1);
+  }
+
+  var list2 = document.createElement("ul");
+  list2.className = "creatine_list2";
+  for(var i = 0; i < array2.length; i++) {
+    // Create the list item:
+    var item2 = document.createElement('li');
+    item2.innerHTML = array2[i];
+    item2.className = "creatine_item";
+    // Set its contents:
+    // Add it to the list:
+    var br2 = document.createElement("br");
+    list2.appendChild(item2);
+    list2.appendChild(br2);
+  }
+
+  col1.appendChild(list1);
+  col2.appendChild(list2);
+
+  var creatine_title = document.createElement("div");
+  creatine_title.className = "creatine_title row";
+  creatine_title.innerText = "The benefits of creatine";
+  var break_line = document.createElement("br");
+
+  row.appendChild(col1);
+  row.appendChild(col2);
+  pic_container.appendChild(creatine_title);
+  pic_container.appendChild(break_line);
+  pic_container.appendChild(row);
+
+  // pic_container.appendChild(creatine_title);
+  // pic_container.appendChild(col1);
+  // pic_container.appendChild(col2);
+
+  ////////////////////////////////////////
   div1.appendChild(text1_1);
   div1.appendChild(text1_2);
-  div2.appendChild(text2_1);
-  div2.appendChild(text2_2);
+  div1_A.appendChild(text1_1_A);
+  div1_A.appendChild(text1_2_A);
   information.appendChild(div1);
-  pic_container.appendChild(div2);
+  information.appendChild(div1_A);
   information.appendChild(pic_container);
 
-  // dummy text
-  var div3 = document.createElement("div");
-  div3.className = "compartment";
-  var dummy_statement = document.createElement("p");
-  dummy_statement.className = "statements";
-  dummy_statement.innerText = "Important when not eating enough fish";
-  var dummy_reasoning = document.createElement("p");
-  dummy_reasoning.className = "reasoning";
-  dummy_reasoning.innerText = "The American Heart Association recommends people eat two servings of fish per week due to its beneficial omega-3 fatty acids. If you don’t often eat fish, supplementation may be beneficial to you. While there are a number of EFA supplements, such as flax and other oils, fish oil is one of the finest sources available.";
-
-  div3.appendChild(dummy_statement);
-  div3.appendChild(dummy_reasoning);
-  information.appendChild(div3);
-
-  var div4 = document.createElement("div");
-  div4.className = "compartment";
-  var dummy_statement2 = document.createElement("p");
-  dummy_statement2.className = "statements";
-  dummy_statement2.innerText = "Fish oil and muscle growth";
-  var dummy_reasoning2 = document.createElement("p");
-  dummy_reasoning2.className = "reasoning";
-  dummy_reasoning2.innerText = "Perhaps more interesting for people looking to build muscle, EPA and DHA supplementation has been suggested to support muscle protein synthesis and limit muscle protein degradation. This can mean less muscle breakdown and more muscle growth.";
-  var br = document.createElement("br");
-
-  // for the second paragraph
-  var div4_1 = document.createElement("div");
-  var dummy_reasoning3 = document.createElement("p");
-  dummy_reasoning3.className = "reasoning";
-  dummy_reasoning3.innerText = "Perhaps more interesting for people looking to build muscle, EPA and DHA supplementation has been suggested to support muscle protein synthesis and limit muscle protein degradation. This can mean less muscle breakdown and more muscle growth.";
-  div4_1.appendChild(dummy_reasoning3);
-
-  div4.appendChild(dummy_statement2);
-  div4.appendChild(dummy_reasoning2);
-  information.appendChild(div4);
-  information.appendChild(br);
-  div4.appendChild(div4_1);
-  //
-  // var div5 = document.createElement("div");
-  // div5.className = "compartment";
-  // var dummy_statement3 = document.createElement("p");
-  // dummy_statement3.className = "statements";
-  // dummy_statement3.innerText = "Lorem Ipsum";
-  // var dummy_reasoning3 = document.createElement("p");
-  // dummy_reasoning3.className = "reasoning";
-  // dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div5.appendChild(dummy_statement3);
-  // div5.appendChild(dummy_reasoning3);
-  // wrapper.appendChild(div5);
-  //
-  // var div6 = document.createElement("div");
-  // div6.className = "compartment";
-  // var dummy_statement4 = document.createElement("p");
-  // dummy_statement4.className = "statements";
-  // dummy_statement4.innerText = "Lorem Ipsum";
-  // var dummy_reasoning4 = document.createElement("p");
-  // dummy_reasoning4.className = "reasoning";
-  // dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div6.appendChild(dummy_statement4);
-  // div6.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div6);
-  //
-  // var div7 = document.createElement("div");
-  // div7.className = "compartment";
-  // var dummy_statement5 = document.createElement("p");
-  // dummy_statement5.className = "statements";
-  // dummy_statement5.innerText = "Lorem Ipsum";
-  // var dummy_reasoning5 = document.createElement("p");
-  // dummy_reasoning5.className = "reasoning";
-  // dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div7.appendChild(dummy_statement4);
-  // div7.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div7);
-  //
-  // information.appendChild(wrapper);
+  var creatine_information = document.getElementById("information");
+  creatine_information.style.height = "200%";
 }
 
 var wheyProtein = function(){
@@ -936,44 +709,8 @@ var wheyProtein = function(){
   div3.appendChild(dummy_reasoning);
   information.appendChild(div3);
 
-  //
-  // var div5 = document.createElement("div");
-  // div5.className = "compartment";
-  // var dummy_statement3 = document.createElement("p");
-  // dummy_statement3.className = "statements";
-  // dummy_statement3.innerText = "Lorem Ipsum";
-  // var dummy_reasoning3 = document.createElement("p");
-  // dummy_reasoning3.className = "reasoning";
-  // dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div5.appendChild(dummy_statement3);
-  // div5.appendChild(dummy_reasoning3);
-  // wrapper.appendChild(div5);
-  //
-  // var div6 = document.createElement("div");
-  // div6.className = "compartment";
-  // var dummy_statement4 = document.createElement("p");
-  // dummy_statement4.className = "statements";
-  // dummy_statement4.innerText = "Lorem Ipsum";
-  // var dummy_reasoning4 = document.createElement("p");
-  // dummy_reasoning4.className = "reasoning";
-  // dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div6.appendChild(dummy_statement4);
-  // div6.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div6);
-  //
-  // var div7 = document.createElement("div");
-  // div7.className = "compartment";
-  // var dummy_statement5 = document.createElement("p");
-  // dummy_statement5.className = "statements";
-  // dummy_statement5.innerText = "Lorem Ipsum";
-  // var dummy_reasoning5 = document.createElement("p");
-  // dummy_reasoning5.className = "reasoning";
-  // dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div7.appendChild(dummy_statement4);
-  // div7.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div7);
-  //
-  // information.appendChild(wrapper);
+  var wheyProtein_information = document.getElementById("information");
+  wheyProtein_information.style.height = "260%";
 }
 
 var preWorkout = function(){
@@ -1005,22 +742,23 @@ var preWorkout = function(){
   pic_container.className = "preWorkout_frame row";
 
   var div2 = document.createElement("div");
-  div2.className = "frame_content";
+  // div2.className = "frame_content";
   var row1 = document.createElement("div");
   row1.className = "row";
+  row1.id = "row1"
   var row2 = document.createElement("div");
   row2.className = "row";
 
   // COLUMN 1
   var column_1 = document.createElement("div");
-  column_1.className = "col-md-6 noPadding";
+  column_1.className = "col-md-6";
 
   var col1_in_column_1 = document.createElement("div");
-  col1_in_column_1.className = "col-md-4 smallImage noPadding";
+  col1_in_column_1.className = "col-md-4 smallImage";
   // col1_in_column_1.innerText = "COL MD 4COL MD 4COL MD 4COL MD 4COL MD 4COL MD 4";
 
   var col2_in_column_1 = document.createElement("div");
-  col2_in_column_1.className = "col-md-8 noPadding";
+  col2_in_column_1.className = "col-md-8";
   var caffeine = document.createElement("p");
   caffeine.innerText = "Caffeine";
   var caffeine_br = document.createElement("br");
@@ -1030,58 +768,98 @@ var preWorkout = function(){
   col2_in_column_1.appendChild(caffeine);
   col2_in_column_1.appendChild(caffeine_info);
 
-  var row_in_column_1 = document.createElement("div");
-  row_in_column_1.className = "row";
-  row_in_column_1.appendChild(col1_in_column_1);
-  row_in_column_1.appendChild(col2_in_column_1);
-  column_1.appendChild(row_in_column_1);
+  var caffeine_row_in_column_1 = document.createElement("div");
+  caffeine_row_in_column_1.className = "row";
+  caffeine_row_in_column_1.appendChild(col1_in_column_1);
+  caffeine_row_in_column_1.appendChild(col2_in_column_1);
+  column_1.appendChild(caffeine_row_in_column_1);
 
   // COLUMN 2
   var column_2 = document.createElement("div");
   column_2.className = "col-md-6";
-  column_2.innerText = "2222222222222222222222222222222222222222222222222222222222222222222";
+
+  var col1_in_column_2 = document.createElement("div");
+  col1_in_column_2.className = "col-md-4 smallImage";
+
+  var col2_in_column_2 = document.createElement("div");
+  col2_in_column_2.className = "col-md-8";
+  var beta_alanine = document.createElement("p");
+  beta_alanine.innerText = "Beta-Alanine";
+  var beta_alanine_br = document.createElement("br");
+  var beta_alanine_info = document.createElement("p");
+  beta_alanine_info.innerText = "Beta-Alanine can help improve your overall training volume, and it works by buffering hydrogen ions, giving you the ability to keep your intensity up for longer periods of time. This is also the ingredient that gives you the “tingly” sensation in your skin. This is called 'paresthesia' and is completely normal!";
+  beta_alanine_info.className = "smallText";
+  col2_in_column_2.appendChild(beta_alanine);
+  col2_in_column_2.appendChild(beta_alanine_info);
+
+  var beta_alanine_row_in_column_1 = document.createElement("div");
+  beta_alanine_row_in_column_1.className = "row";
+  beta_alanine_row_in_column_1.appendChild(col1_in_column_2);
+  beta_alanine_row_in_column_1.appendChild(col2_in_column_2);
+  column_2.appendChild(beta_alanine_row_in_column_1);
+
   row1.appendChild(column_1);
   row1.appendChild(column_2);
 
   // COLUMN 3
   var column_3 = document.createElement("div");
   column_3.className = "col-md-6";
-  column_3.innerText = "3333333333333333333333333333333333333333333334";
+
+  var col1_in_column_3 = document.createElement("div");
+  col1_in_column_3.className = "col-md-4 smallImage";
+
+  var col2_in_column_3 = document.createElement("div");
+  col2_in_column_3.className = "col-md-8";
+  var creatine_monohydrate = document.createElement("p");
+  creatine_monohydrate.innerText = "Creatine Monohydrate";
+  var creatine_monohydrate_br = document.createElement("br");
+  var creatine_monohydrate_info = document.createElement("p");
+  creatine_monohydrate_info.innerText = "Creatine works by boosting the level of ATP generation in the muscles, allowing you to perform more work total in each and every workout you do, before hitting the point of fatigue. This in turn can enhance your strength, lean mass muscle, and sprinting capability.";
+  creatine_monohydrate_info.className = "smallText";
+  col2_in_column_3.appendChild(creatine_monohydrate);
+  col2_in_column_3.appendChild(creatine_monohydrate_info);
+
+  var creatine_monohydrate_row_in_column_3 = document.createElement("div");
+  creatine_monohydrate_row_in_column_3.className = "row";
+  creatine_monohydrate_row_in_column_3.appendChild(col1_in_column_3);
+  creatine_monohydrate_row_in_column_3.appendChild(col2_in_column_3);
+  column_3.appendChild(creatine_monohydrate_row_in_column_3);
 
   // COLUMN 4
   var column_4 = document.createElement("div");
   column_4.className = "col-md-6";
-  column_4.innerText = "4444444444444444444444444444444444444444444444444444444444444444444444444";
+
+  var col1_in_column_4 = document.createElement("div");
+  col1_in_column_4.className = "col-md-4 smallImage";
+
+  var col2_in_column_4 = document.createElement("div");
+  col2_in_column_4.className = "col-md-8";
+  var citrulline_malate = document.createElement("p");
+  citrulline_malate.innerText = "Citrulline Malate";
+  var citrulline_malate_br = document.createElement("br");
+  var citrulline_malate_info = document.createElement("p");
+  citrulline_malate_info.innerText = "Citrulline malate has many benefits including helping to increase your energy level and performance, while speeding up the recovery rate that you see. It also aids in reducing lactic acid formation, enhances muscle “pumps,” and increases the utilization of branched-chain amino acids during exercise.";
+  citrulline_malate_info.className = "smallText";
+  col2_in_column_4.appendChild(citrulline_malate);
+  col2_in_column_4.appendChild(citrulline_malate_info);
+
+  var citrulline_malate_row_in_column_4 = document.createElement("div");
+  citrulline_malate_row_in_column_4.className = "row";
+  citrulline_malate_row_in_column_4.appendChild(col1_in_column_4);
+  citrulline_malate_row_in_column_4.appendChild(col2_in_column_4);
+  column_4.appendChild(citrulline_malate_row_in_column_4);
+
   row2.appendChild(column_3);
   row2.appendChild(column_4);
-  // var text2_1 = document.createElement("p");
-  // text2_1.className = "statements";
-  // text2_1.innerText = "Test";
-  // var text2_2 = document.createElement("p");
-  // text2_2.className = "reasoning";
-  // text2_2.innerText = "Test";
-  //
-  // div2.appendChild(text2_1);
-  // div2.appendChild(text2_2);
+
   div2.appendChild(row1);
   div2.appendChild(row2);
   pic_container.appendChild(div2);
 
   information.appendChild(pic_container);
 
-  // dummy text
-  // var div3 = document.createElement("div");
-  // div3.className = "compartment";
-  // var dummy_statement = document.createElement("p");
-  // dummy_statement.className = "statements";
-  // dummy_statement.innerText = "Important when not eating enough fish";
-  // var dummy_reasoning = document.createElement("p");
-  // dummy_reasoning.className = "reasoning";
-  // dummy_reasoning.innerText = "The American Heart Association recommends people eat two servings of fish per week due to its beneficial omega-3 fatty acids. If you don’t often eat fish, supplementation may be beneficial to you. While there are a number of EFA supplements, such as flax and other oils, fish oil is one of the finest sources available.";
-  //
-  // div3.appendChild(dummy_statement);
-  // div3.appendChild(dummy_reasoning);
-  // information.appendChild(div3);
+  var preWorkout_information = document.getElementById("information");
+  preWorkout_information.style.height = "154%";
 }
 
 var bcaa = function(){
@@ -1097,27 +875,25 @@ var bcaa = function(){
   div1.className = "compartment";
   var text1_1 = document.createElement("p");
   text1_1.className = "statements";
-  text1_1.innerText = "You told us you were focusing on general health";
+  text1_1.innerText = "You said you need help with recovery";
   var text1_2 = document.createElement("p");
   text1_2.className = "reasoning";
-  text1_2.innerText = "BCAA is one of the most widely researched supplements out there, and for good reason! There are many benefits associated with fish oil, and it’s incredibly useful for the general population and can help everyone from athletes to sedentary individuals.";
+  text1_2.innerText = "Branched-chain amino acids, or BCAAs, are a group of the essential amino acids leucine, isoleucine and valine, which comprise around 35% of your body’s muscle protein. They’re “essential” because your body doesn’t make them on its own—you have to get them from food and supplements. Like other amino acids, they’re the building blocks of protein. But these particular aminos may also help preserve muscle glycogen stores, which fuel your muscles and minimize protein breakdown during exercise.";
 
 
   var pic_container = document.createElement("div");
-  pic_container.className = "frame";
-  var image2 = document.createElement("IMG");
-  image2.className = "banner2";
-  image2.setAttribute("src", "../img/mountains.jpg");
-  pic_container.appendChild(image2);
+  pic_container.className = "bcaa_frame row";
 
   var div2 = document.createElement("div");
-  div2.className = "frame_content";
+  div2.className = "bcaa_frame_content";
   var text2_1 = document.createElement("p");
   text2_1.className = "statements";
-  text2_1.innerText = "Fish oil supports your overall health";
+  text2_1.id = "bcaa_statements";
+  text2_1.innerText = "BCAA’s and your training";
   var text2_2 = document.createElement("p");
   text2_2.className = "reasoning";
-  text2_2.innerText = "Fish oil contains EPA and DHA, which are omega-3 fatty acids that have many benefits supported by repeated double-blind clinical trials. These are termed “essential fatty acids” (EFA’s) because we need them for proper function, but our bodies cannot produce them. Thus, we must obtain them through food or supplements.";
+  text2_2.id = "bcaa_reasoning";
+  text2_2.innerText = "BCAAs fuel your skeletal muscles during training, which can help give you the edge you need to push your limits. Supplementing with BCAAs helps preserve your stores of glycogen—the primary fuel your muscles use for energy production. This means your body has a reliable energy source to tap into while you work out, which can keep you going. Plus, abundant glycogen stores keep your body from breaking down muscle protein for energy instead. That’s why BCAA supplements are a win-win for your muscles—they help sustain and safeguard them.";
 
   div1.appendChild(text1_1);
   div1.appendChild(text1_2);
@@ -1132,75 +908,17 @@ var bcaa = function(){
   div3.className = "compartment";
   var dummy_statement = document.createElement("p");
   dummy_statement.className = "statements";
-  dummy_statement.innerText = "Important when not eating enough fish";
+  dummy_statement.innerText = "BCAA's and better recovery";
   var dummy_reasoning = document.createElement("p");
   dummy_reasoning.className = "reasoning";
-  dummy_reasoning.innerText = "The American Heart Association recommends people eat two servings of fish per week due to its beneficial omega-3 fatty acids. If you don’t often eat fish, supplementation may be beneficial to you. While there are a number of EFA supplements, such as flax and other oils, fish oil is one of the finest sources available.";
+  dummy_reasoning.innerText = "BCAAs can also help enhance muscle protein recovery after your workout, especially when you consume them with carbs. Emerging research suggests that leucine is the star player of BCAAs when it comes to regulating genetic signaling pathways involved in muscle protein synthesis. That’s why quality BCAA supplements have a higher ratio of leucine to isoleucine and valine. A typical daily dose includes five grams of leucine, four grams of valine and two grams of isoleucine.";
 
   div3.appendChild(dummy_statement);
   div3.appendChild(dummy_reasoning);
   information.appendChild(div3);
 
-  var div4 = document.createElement("div");
-  div4.className = "compartment";
-  var dummy_statement2 = document.createElement("p");
-  dummy_statement2.className = "statements";
-  dummy_statement2.innerText = "Fish oil and muscle growth";
-  var dummy_reasoning2 = document.createElement("p");
-  dummy_reasoning2.className = "reasoning";
-  dummy_reasoning2.innerText = "Perhaps more interesting for people looking to build muscle, EPA and DHA supplementation has been suggested to support muscle protein synthesis and limit muscle protein degradation. This can mean less muscle breakdown and more muscle growth.";
-  var br = document.createElement("br");
-
-  // for the second paragraph
-  var div4_1 = document.createElement("div");
-  var dummy_reasoning3 = document.createElement("p");
-  dummy_reasoning3.className = "reasoning";
-  dummy_reasoning3.innerText = "Perhaps more interesting for people looking to build muscle, EPA and DHA supplementation has been suggested to support muscle protein synthesis and limit muscle protein degradation. This can mean less muscle breakdown and more muscle growth.";
-  div4_1.appendChild(dummy_reasoning3);
-
-  div4.appendChild(dummy_statement2);
-  div4.appendChild(dummy_reasoning2);
-  information.appendChild(div4);
-  information.appendChild(br);
-  div4.appendChild(div4_1);
-  //
-  // var div5 = document.createElement("div");
-  // div5.className = "compartment";
-  // var dummy_statement3 = document.createElement("p");
-  // dummy_statement3.className = "statements";
-  // dummy_statement3.innerText = "Lorem Ipsum";
-  // var dummy_reasoning3 = document.createElement("p");
-  // dummy_reasoning3.className = "reasoning";
-  // dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div5.appendChild(dummy_statement3);
-  // div5.appendChild(dummy_reasoning3);
-  // wrapper.appendChild(div5);
-  //
-  // var div6 = document.createElement("div");
-  // div6.className = "compartment";
-  // var dummy_statement4 = document.createElement("p");
-  // dummy_statement4.className = "statements";
-  // dummy_statement4.innerText = "Lorem Ipsum";
-  // var dummy_reasoning4 = document.createElement("p");
-  // dummy_reasoning4.className = "reasoning";
-  // dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div6.appendChild(dummy_statement4);
-  // div6.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div6);
-  //
-  // var div7 = document.createElement("div");
-  // div7.className = "compartment";
-  // var dummy_statement5 = document.createElement("p");
-  // dummy_statement5.className = "statements";
-  // dummy_statement5.innerText = "Lorem Ipsum";
-  // var dummy_reasoning5 = document.createElement("p");
-  // dummy_reasoning5.className = "reasoning";
-  // dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div7.appendChild(dummy_statement4);
-  // div7.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div7);
-  //
-  // information.appendChild(wrapper);
+  var bcaa_information = document.getElementById("information");
+  bcaa_information.style.height = "195%";
 }
 
 var b_vitamins = function(){
@@ -1282,42 +1000,4 @@ var b_vitamins = function(){
   information.appendChild(div4);
   information.appendChild(br);
   div4.appendChild(div4_1);
-  //
-  // var div5 = document.createElement("div");
-  // div5.className = "compartment";
-  // var dummy_statement3 = document.createElement("p");
-  // dummy_statement3.className = "statements";
-  // dummy_statement3.innerText = "Lorem Ipsum";
-  // var dummy_reasoning3 = document.createElement("p");
-  // dummy_reasoning3.className = "reasoning";
-  // dummy_reasoning3.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div5.appendChild(dummy_statement3);
-  // div5.appendChild(dummy_reasoning3);
-  // wrapper.appendChild(div5);
-  //
-  // var div6 = document.createElement("div");
-  // div6.className = "compartment";
-  // var dummy_statement4 = document.createElement("p");
-  // dummy_statement4.className = "statements";
-  // dummy_statement4.innerText = "Lorem Ipsum";
-  // var dummy_reasoning4 = document.createElement("p");
-  // dummy_reasoning4.className = "reasoning";
-  // dummy_reasoning4.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div6.appendChild(dummy_statement4);
-  // div6.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div6);
-  //
-  // var div7 = document.createElement("div");
-  // div7.className = "compartment";
-  // var dummy_statement5 = document.createElement("p");
-  // dummy_statement5.className = "statements";
-  // dummy_statement5.innerText = "Lorem Ipsum";
-  // var dummy_reasoning5 = document.createElement("p");
-  // dummy_reasoning5.className = "reasoning";
-  // dummy_reasoning5.innerText = "Quisque venenatis nulla vitae tortor dictum ornare. Aenean a tincidunt augue. Curabitur sed facilisis augue, ultricies facilisis mauris. Donec quis fermentum sapien. Donec scelerisque ex ut augue varius tempus. Nam bibendum sed odio non laoreet. Duis fermentum tortor vel velit aliquet dictum sit amet dignissim libero. Nullam non nisl dapibus est tristique lobortis. Quisque egestas nibh id interdum eleifend. Quisque velit diam, consectetur quis est eu, facilisis viverra magna. Duis vel magna lectus. Nullam mattis ipsum orci, ut porttitor augue euismod sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer auctor ut risus sed ornare. Praesent eget scelerisque lacus. Nunc pharetra, libero sit amet posuere vulputate, felis tortor eleifend urna, molestie malesuada nibh lectus id metus.";
-  // div7.appendChild(dummy_statement4);
-  // div7.appendChild(dummy_reasoning4);
-  // wrapper.appendChild(div7);
-  //
-  // information.appendChild(wrapper);
 }

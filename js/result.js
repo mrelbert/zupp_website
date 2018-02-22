@@ -221,8 +221,7 @@ for(var key in goal_object){
     }
   } else if(key == "Glutamine"){
     absolute_url.onclick = function(event){
-      var information = document.getElementById("information");
-      information.innerText = "GLUTAMINE INFO";
+      glutamine();
     }
   } else if(key == "Multivitamin"){
     absolute_url.onclick = function(event){
@@ -234,7 +233,7 @@ for(var key in goal_object){
     }
   } else if(key == "Creatine"){
     absolute_url.onclick = function(event){
-      first_show(); // from result_aid.js
+      creatine();
     }
   } else if(key == "Whey Protein"){
     absolute_url.onclick = function(event){
@@ -251,8 +250,7 @@ for(var key in goal_object){
     }
   } else if(key == "BCAA"){
     absolute_url.onclick = function(event){
-      var information = document.getElementById("information");
-      information.innerText = "BCAA INFO";
+      bcaa();
     }
   } else if(key == "B-vitamins"){
     absolute_url.onclick = function(event){

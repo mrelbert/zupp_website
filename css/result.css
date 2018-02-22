@@ -81,21 +81,36 @@
   position: relative;
   background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/careof.jpg');
   background-size: auto 100%;
-  height: 25%;
+  height: 35%;
 }
 
 .greenTeaExtract_frame{
   position: relative;
   background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/careof.jpg');
   background-size: auto 100%;
-  height: 25%;
+  height: 35%;
+}
+
+.bcaa_frame{
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/careof.jpg');
+  background-size: auto 100%;
+  height: 32%;
+}
+
+.creatine_frame{
+  position: relative;
+  background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/careof.jpg');
+  background-size: auto 100%;
+  height: 33%;
 }
 
 .smallImage{
-  background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/vitamin_1.jpg');
-  background-size: 80px 80px;
+  background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/sun.gif');
+  background-size: 100px 100px;
   background-repeat: no-repeat;
-  margin-top: 45px;
+  background-position: center;
+  margin-top: 25px;
 }
 
 .smallText{
@@ -107,7 +122,7 @@
 }
 
 .preWorkout_frame{
-  position: relative;
+  /* position: relative; */
   /* background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.66)), url('../img/careof.jpg');
   background-size: auto 100%;
   height: 35%; */
@@ -122,6 +137,22 @@
 .carnitine_list{
   width: 65%;
   margin: 0 auto;
+}
+
+.creatine_list1{
+  padding-left: 30px;
+  width: 100%;
+}
+
+.creatine_list2{
+  padding-right: 30px;
+  width: 100%;
+}
+
+.creatine_title{
+  margin-top: 20px;
+  color: white;
+  font-size: 1.5em;
 }
 
 .carnitine_title{
@@ -152,6 +183,10 @@
   color: white;
 }
 
+.creatine_item{
+  color: white;
+}
+
 .multiVitamin{
   color: white;
   font-size: 1.5em;
@@ -175,6 +210,25 @@
 
 .frame_content p {
   color: white;
+}
+
+.bcaa_frame_content {
+  width: 100%;
+}
+
+
+.bcaa_frame_content p{
+  color: white;
+}
+
+#bcaa_statements{
+  margin-top: 40px;
+  text-align: center;
+}
+
+#bcaa_reasoning{
+  margin: 0 auto;
+  width: 60%;
 }
 
 .wrapper{
@@ -251,6 +305,177 @@
   box-shadow: 5px 4px 18px #FEC12E;
 }
 
+#fishOil_information{
+  position: absolute;
+  margin-left: 23%;
+  margin-bottom: 12%;
+  padding: 0;
+  height: 218%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+
+  /* why did I put this here? */
+  word-wrap: break-word;
+
+  /* overflow-y: hidden; */
+
+  /* shadow */
+  box-shadow: 5px 4px 18px #FEC12E;
+}
+
+#multiVitamin_information{
+  position: absolute;
+  margin-left: 23%;
+  margin-bottom: 12%;
+  padding: 0;
+  height: 210%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+
+  /* why did I put this here? */
+  word-wrap: break-word;
+
+  /* overflow-y: hidden; */
+
+  /* shadow */
+  box-shadow: 5px 4px 18px #FEC12E;
+}
+
+#carnitine_information{
+  position: absolute;
+  margin-left: 23%;
+  margin-bottom: 12%;
+  padding: 0;
+  height: 4%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+
+  /* why did I put this here? */
+  word-wrap: break-word;
+
+  /* overflow-y: hidden; */
+
+  /* shadow */
+  box-shadow: 5px 4px 18px #FEC12E;
+}
+
+#greenTea_information{
+  position: absolute;
+  margin-left: 23%;
+  margin-bottom: 12%;
+  padding: 0;
+  height: 4%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+
+  /* why did I put this here? */
+  word-wrap: break-word;
+
+  /* overflow-y: hidden; */
+
+  /* shadow */
+  box-shadow: 5px 4px 18px #FEC12E;
+}
+
+#glutamine_information{
+  position: absolute;
+  margin-left: 23%;
+  margin-bottom: 12%;
+  padding: 0;
+  height: 4%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+
+  /* why did I put this here? */
+  word-wrap: break-word;
+
+  /* overflow-y: hidden; */
+
+  /* shadow */
+  box-shadow: 5px 4px 18px #FEC12E;
+}
+
+#creatine_information{
+  position: absolute;
+  margin-left: 23%;
+  margin-bottom: 12%;
+  padding: 0;
+  height: 4%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+
+  /* why did I put this here? */
+  word-wrap: break-word;
+
+  /* overflow-y: hidden; */
+
+  /* shadow */
+  box-shadow: 5px 4px 18px #FEC12E;
+}
+
+#wheyProtein_information{
+  position: absolute;
+  margin-left: 23%;
+  margin-bottom: 12%;
+  padding: 0;
+  height: 4%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+
+  /* why did I put this here? */
+  word-wrap: break-word;
+
+  /* overflow-y: hidden; */
+
+  /* shadow */
+  box-shadow: 5px 4px 18px #FEC12E;
+}
+
+#preWorkout_information{
+  position: absolute;
+  margin-left: 23%;
+  margin-bottom: 12%;
+  padding: 0;
+  height: 4%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+
+  /* why did I put this here? */
+  word-wrap: break-word;
+
+  /* overflow-y: hidden; */
+
+  /* shadow */
+  box-shadow: 5px 4px 18px #FEC12E;
+}
+
+#bcaa_information{
+  position: absolute;
+  margin-left: 23%;
+  margin-bottom: 12%;
+  padding: 0;
+  height: 4%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  color: #FEC12E;
+
+  /* why did I put this here? */
+  word-wrap: break-word;
+
+  /* overflow-y: hidden; */
+
+  /* shadow */
+  box-shadow: 5px 4px 18px #FEC12E;
+}
+
 #unordered_list{
   width: 225px;
   padding-right: 22%;
@@ -283,4 +508,8 @@
   box-shadow: 1px 2px 6px #FEC12E;
   background-color: #FEC12E;
   font-weight: bold;
+}
+
+#row1 {
+  margin-bottom: 20px;
 }

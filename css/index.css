@@ -7,9 +7,17 @@
   background-color: #1A1A1A;
 }
 
-.greeting {
+.home_greeting {
   font-family: 'Oswald', sans-serif;
   height: 300px;
+  color: #FEC12E;
+  text-align: center;
+  position: relative;
+  padding-top: 200px;
+}
+
+.greeting {
+  font-family: 'Oswald', sans-serif;
   color: #FEC12E;
   text-align: center;
   position: relative;
