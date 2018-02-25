@@ -42,14 +42,11 @@ var fishOil = function(){
   var text1_2 = document.createElement("p");
   text1_2.className = "reasoning";
   text1_2.innerText = "Fish oil is one of the most widely researched supplements out there, and for good reason! There are many benefits associated with fish oil, and it’s incredibly useful for the general population and can help everyone from athletes to sedentary individuals.";
-
+  div1.appendChild(text1_1);
+  div1.appendChild(text1_2);
 
   var pic_container = document.createElement("div");
-  pic_container.className = "frame";
-  var image2 = document.createElement("IMG");
-  image2.className = "banner2";
-  image2.setAttribute("src", "../img/careof.jpg");
-  pic_container.appendChild(image2);
+  pic_container.className = "fishOil_frame";
 
   var div2 = document.createElement("div");
   div2.className = "frame_content";
@@ -59,11 +56,9 @@ var fishOil = function(){
   var text2_2 = document.createElement("p");
   text2_2.className = "reasoning";
   text2_2.innerText = "Fish oil contains EPA and DHA, which are omega-3 fatty acids that have many benefits supported by repeated double-blind clinical trials. These are termed “essential fatty acids” (EFA’s) because we need them for proper function, but our bodies cannot produce them. Thus, we must obtain them through food or supplements.";
-
-  div1.appendChild(text1_1);
-  div1.appendChild(text1_2);
   div2.appendChild(text2_1);
   div2.appendChild(text2_2);
+
   information.appendChild(div1);
   pic_container.appendChild(div2);
   information.appendChild(pic_container);
